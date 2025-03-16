@@ -7,25 +7,26 @@ import re
 from collections import Counter
 
 def preprocess_text(text):
-    """Preprocess text for better matching."""
+    """Simple preprocessing: lowercase, remove punctuation, normalize whitespace."""
     text = str(text).lower()
-    text = re.sub(r'[^\w\s]', '', text)
+    text = re.sub(r'[^\w\s]', ' ', text)
     text = re.sub(r'\s+', ' ', text).strip()
     return text
 
-def calculate_jaccard_similarity(set1, set2):
-    """Calculate Jaccard similarity between two sets."""
-    if not set1 or not set2:
-        return 0.0
-    intersection = len(set1.intersection(set2))
-    union = len(set1.union(set2))
-    return intersection / union if union > 0 else 0.0
+def ensure_dump_folder():
+    """Ensure dump folder exists."""
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    dump_dir = os.path.join(os.path.dirname(script_dir), "dump")
+    if not os.path.exists(dump_dir):
+        os.makedirs(dump_dir)
+    return dump_dir
 
 def load_data(dataset="test"):
     """Load data for retrieval."""
     # Get the current directory
     script_dir = os.path.dirname(os.path.abspath(__file__))
     data_dir = os.path.join(os.path.dirname(script_dir), "data")
+    dump_dir = ensure_dump_folder()
     
     # Load training data
     train_prompts_path = os.path.join(data_dir, "train_prompts.csv")
@@ -44,7 +45,7 @@ def load_data(dataset="test"):
     if dataset == "test":
         test_prompts_path = os.path.join(data_dir, "test_prompts.csv")
         target_df = pd.read_csv(test_prompts_path)
-        output_file = os.path.join(os.path.dirname(script_dir), "track_1_test.csv")
+        output_file = os.path.join(dump_dir, "track_1_test.csv")
         
         # For test data, include dev data in retrieval pool
         dev_prompts_path = os.path.join(data_dir, "dev_prompts.csv")
@@ -67,7 +68,7 @@ def load_data(dataset="test"):
     else:  # dataset == "dev"
         dev_prompts_path = os.path.join(data_dir, "dev_prompts.csv")
         target_df = pd.read_csv(dev_prompts_path)
-        output_file = os.path.join(os.path.dirname(script_dir), "track_1_dev.csv")
+        output_file = os.path.join(dump_dir, "track_1_dev.csv")
         
         # For dev data, only use train data as retrieval pool
         combined_df = train_df.copy()
@@ -75,78 +76,113 @@ def load_data(dataset="test"):
     
     return combined_df, target_df, output_file, responses_df
 
-def build_representation(train_prompts):
+def build_tfidf_representation(train_prompts):
     """Build TF-IDF representation for prompts."""
     print("Building TF-IDF representation...")
     processed_prompts = [preprocess_text(prompt) for prompt in train_prompts]
     
+    # Standard TF-IDF with good parameter values
     vectorizer = TfidfVectorizer(
         stop_words='english',
         ngram_range=(1, 2),  # Include both unigrams and bigrams
-        min_df=2,            # Ignore rare terms
-        max_df=0.9,          # Ignore very common terms
-        max_features=10000   # Limit features
+        min_df=3,            # More aggressive filtering of rare terms
+        max_df=0.8,          # More aggressive filtering of common terms
+        max_features=10000   # Focus on most important features
     )
     
     train_vectors = vectorizer.fit_transform(processed_prompts)
     print(f"TF-IDF matrix shape: {train_vectors.shape}")
     
-    return vectorizer, train_vectors, processed_prompts
+    return vectorizer, train_vectors
+
+def extract_content_words(text):
+    """Extract important content words from text."""
+    words = preprocess_text(text).split()
+    # Filter out stopwords (simple approach)
+    stopwords = {'a', 'an', 'the', 'and', 'or', 'but', 'if', 'because', 'as', 'what', 
+                'when', 'where', 'how', 'which', 'this', 'that', 'these', 'those', 
+                'then', 'to', 'of', 'in', 'for', 'with', 'by', 'at', 'from', 'is', 
+                'are', 'was', 'were', 'be', 'been', 'have', 'has', 'had', 'do', 'does',
+                'did', 'can', 'could', 'will', 'would', 'should', 'i', 'you', 'he', 
+                'she', 'it', 'we', 'they', 'their', 'my', 'your', 'his', 'her', 'its',
+                'our', 'their'}
+    content_words = [word for word in words if word not in stopwords and len(word) > 2]
+    return set(content_words)
 
 def find_best_match(test_prompt, vectorizer, train_vectors, combined_df, responses_df=None):
-    """Find most similar prompt with enhanced similarity criteria."""
+    """Find most similar prompt with optimized BLEU potential."""
+    # Get TF-IDF similarity
     processed_test_prompt = preprocess_text(test_prompt)
     test_vec = vectorizer.transform([processed_test_prompt])
-    
-    # Get TF-IDF similarity scores
     sims = cosine_similarity(test_vec, train_vectors).flatten()
     
-    # Get top candidates
-    top_n = 15
+    # Get initial candidates - more than we need for thorough screening
+    top_n = 40  # Larger pool of candidates for better chance of finding good BLEU matches
     top_indices = sims.argsort()[-top_n:][::-1]
     
-    # Calculate enhanced similarity scores
-    best_score = -1
-    best_idx = top_indices[0]  # Default to highest TF-IDF
+    # Extract content words from test prompt
+    test_content_words = extract_content_words(test_prompt)
+    
+    # Score the candidates on multiple dimensions
+    candidate_scores = []
     
     for idx in top_indices:
         train_prompt = combined_df.iloc[idx]["user_prompt"]
         train_id = combined_df.iloc[idx]["conversation_id"]
         
-        # 1. TF-IDF similarity
+        # 1. TF-IDF similarity - base metric
         tfidf_score = sims[idx]
         
-        # 2. Length similarity
-        test_len = len(str(test_prompt).split())
-        train_len = len(str(train_prompt).split())
-        len_ratio = min(test_len, train_len) / max(test_len, train_len) if max(test_len, train_len) > 0 else 0
+        # 2. Content word overlap - critical for semantic similarity
+        train_content_words = extract_content_words(train_prompt)
+        word_overlap = len(test_content_words.intersection(train_content_words)) / max(1, len(test_content_words))
         
-        # 3. Word overlap
-        test_words = set(preprocess_text(test_prompt).split())
-        train_words = set(preprocess_text(train_prompt).split())
-        word_overlap = calculate_jaccard_similarity(test_words, train_words)
-        
-        # 4. Response quality (if available)
-        response_quality = 0.5  # Default
+        # 3. Response characteristics (if responses are available)
+        response_score = 0.5  # Default
         if responses_df is not None:
             response_rows = responses_df[responses_df["conversation_id"] == train_id]
             if not response_rows.empty:
-                response = response_rows.iloc[0]["model_response"]
-                # Favor longer responses (up to a point)
-                resp_len = len(str(response).split())
-                response_quality = min(1.0, resp_len / 200)
+                response = str(response_rows.iloc[0]["model_response"])
+                
+                # Calculate response quality factors correlated with good BLEU scores
+                
+                # 3a. Response length (moderate length responses tend to have better BLEU scores)
+                resp_len = len(response.split())
+                length_score = 0.0
+                if resp_len > 20 and resp_len < 300:  # Sweet spot for response length
+                    length_score = 0.8
+                elif resp_len <= 20:  # Very short responses
+                    length_score = 0.3
+                else:  # Very long responses
+                    length_score = 0.5
+                
+                # 3b. Response specificity (responses with content words from the prompt tend to be better)
+                content_word_count = len(set(response.lower().split()).intersection(test_content_words))
+                specificity_score = min(1.0, content_word_count / max(1, len(test_content_words)))
+                
+                # 3c. Response is not too generic (helps avoid "I don't know" type responses)
+                generic_phrases = ['i dont know', 'cannot', 'sorry', 'ai', 'language model']
+                generic_score = 1.0
+                for phrase in generic_phrases:
+                    if phrase in response.lower():
+                        generic_score *= 0.8  # Penalize generic responses
+                
+                # Combine response factors
+                response_score = (length_score + specificity_score + generic_score) / 3
         
-        # Combine scores with weights
+        # Calculate final combined score for this candidate
+        # Weight content word overlap more heavily as it correlates better with BLEU
         combined_score = (
-            0.40 * tfidf_score +       # TF-IDF similarity
-            0.20 * len_ratio +         # Length similarity 
-            0.30 * word_overlap +      # Word overlap
-            0.10 * response_quality    # Response quality
+            0.35 * tfidf_score +      # Base similarity
+            0.45 * word_overlap +     # Content overlap (most important)
+            0.20 * response_score     # Response quality
         )
         
-        if combined_score > best_score:
-            best_score = combined_score
-            best_idx = idx
+        candidate_scores.append((idx, combined_score))
+    
+    # Sort by combined score and select the best
+    candidate_scores.sort(key=lambda x: x[1], reverse=True)
+    best_idx = candidate_scores[0][0]
     
     return best_idx
 
@@ -160,7 +196,7 @@ def main(dataset="test"):
     print(f"Loaded {len(target_df)} {dataset} prompts")
     
     # 2) Build TF-IDF representation
-    vectorizer, train_vectors, _ = build_representation(combined_df["user_prompt"])
+    vectorizer, train_vectors = build_tfidf_representation(combined_df["user_prompt"])
     
     # 3) Find best matches for each target prompt
     results = []
@@ -186,7 +222,7 @@ def main(dataset="test"):
     # 4) Save results
     results_df = pd.DataFrame(results)
     results_df.to_csv(output_file, index=False)
-    print(f"Results saved to {output_file}")
+    print(f"Results saved to dump/track_1_{dataset}.csv")
     
     # Print statistics for dev set
     if dataset == "dev":

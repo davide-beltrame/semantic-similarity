@@ -1,11 +1,11 @@
 import pandas as pd
 import numpy as np
-import os
-import re
-from collections import Counter
 from sklearn.decomposition import TruncatedSVD
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
+import os
+import re
+from collections import Counter
 
 def preprocess_text(text):
     """Simple preprocessing: lowercase, remove punctuation, normalize whitespace."""
@@ -14,11 +14,20 @@ def preprocess_text(text):
     text = re.sub(r'\s+', ' ', text).strip()
     return text
 
+def ensure_dump_folder():
+    """Ensure dump folder exists."""
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    dump_dir = os.path.join(os.path.dirname(script_dir), "dump")
+    if not os.path.exists(dump_dir):
+        os.makedirs(dump_dir)
+    return dump_dir
+
 def load_data(dataset="test"):
     """Load data for retrieval."""
     # Get the current directory
     script_dir = os.path.dirname(os.path.abspath(__file__))
     data_dir = os.path.join(os.path.dirname(script_dir), "data")
+    dump_dir = ensure_dump_folder()
     
     # Load training data
     train_prompts_path = os.path.join(data_dir, "train_prompts.csv")
@@ -37,7 +46,7 @@ def load_data(dataset="test"):
     if dataset == "test":
         test_prompts_path = os.path.join(data_dir, "test_prompts.csv")
         target_df = pd.read_csv(test_prompts_path)
-        output_file = os.path.join(os.path.dirname(script_dir), "track_2_test.csv")
+        output_file = os.path.join(dump_dir, "track_2_test.csv")
         
         # For test data, include dev data in retrieval pool
         dev_prompts_path = os.path.join(data_dir, "dev_prompts.csv")
@@ -60,7 +69,7 @@ def load_data(dataset="test"):
     else:  # dataset == "dev"
         dev_prompts_path = os.path.join(data_dir, "dev_prompts.csv")
         target_df = pd.read_csv(dev_prompts_path)
-        output_file = os.path.join(os.path.dirname(script_dir), "track_2_dev.csv")
+        output_file = os.path.join(dump_dir, "track_2_dev.csv")
         
         # For dev data, only use train data as retrieval pool
         combined_df = train_df.copy()
@@ -68,43 +77,45 @@ def load_data(dataset="test"):
     
     return combined_df, target_df, output_file, responses_df
 
-def build_representations(train_prompts):
-    """Build both TF-IDF and LSI representations."""
-    print("Building text representations...")
+def build_embeddings(prompts):
+    """Build distributed embeddings using TF-IDF + LSA (Latent Semantic Analysis)."""
+    print("Building distributed representations...")
     
-    # Preprocess all prompts
-    processed_prompts = [preprocess_text(prompt) for prompt in train_prompts]
+    # 1. Preprocess all prompts
+    processed_prompts = [preprocess_text(prompt) for prompt in prompts]
     
-    # 1. Create TF-IDF representation
+    # 2. Create TF-IDF matrix
     print("Computing TF-IDF matrix...")
-    tfidf_vectorizer = TfidfVectorizer(
-        analyzer='word',
+    vectorizer = TfidfVectorizer(
         stop_words='english',
-        ngram_range=(1, 2),  # Use unigrams and bigrams
-        min_df=2,            # Ignore terms appearing in less than 2 documents
-        max_df=0.9,          # Ignore terms appearing in more than 90% of documents
-        max_features=20000   # Limit vocabulary size for efficiency
+        ngram_range=(1, 2),
+        min_df=2, 
+        max_df=0.9
     )
-    
-    tfidf_matrix = tfidf_vectorizer.fit_transform(processed_prompts)
+    tfidf_matrix = vectorizer.fit_transform(processed_prompts)
     print(f"TF-IDF matrix shape: {tfidf_matrix.shape}")
     
-    # 2. Apply LSI (Latent Semantic Indexing) to create distributed representation
-    print("Creating LSI representation...")
-    n_components = 150  # Dimensionality of LSI space
+    # 3. Apply SVD for dimensionality reduction (this creates distributed representations)
+    print("Applying SVD for dimensionality reduction...")
+    n_components = 150  # Number of dimensions for our embeddings
     svd = TruncatedSVD(n_components=n_components, random_state=42)
-    lsi_matrix = svd.fit_transform(tfidf_matrix)
-    print(f"LSI matrix shape: {lsi_matrix.shape}")
+    distributed_embeddings = svd.fit_transform(tfidf_matrix)
+    print(f"Distributed embeddings shape: {distributed_embeddings.shape}")
     
-    # Explained variance as diagnostic
+    # 4. Normalize embeddings for better cosine similarity - handle zero vectors
+    row_norms = np.linalg.norm(distributed_embeddings, axis=1)
+    # Replace zero norms with 1 to avoid division by zero
+    row_norms[row_norms == 0] = 1
+    normalized_embeddings = distributed_embeddings / row_norms[:, np.newaxis]
+    
+    # Calculate variance explained
     explained_variance = svd.explained_variance_ratio_.sum()
     print(f"Explained variance: {explained_variance:.4f}")
     
     return {
-        'tfidf_vectorizer': tfidf_vectorizer,
-        'tfidf_matrix': tfidf_matrix,
-        'svd': svd, 
-        'lsi_matrix': lsi_matrix,
+        'vectorizer': vectorizer,
+        'svd': svd,
+        'embeddings': normalized_embeddings,
         'processed_prompts': processed_prompts
     }
 
@@ -122,118 +133,109 @@ def extract_content_words(text):
     content_words = [word for word in words if word not in stopwords and len(word) > 2]
     return set(content_words)
 
-def find_matching_responses(test_prompt, combined_df, representations, responses_df=None):
-    """Find best matching response using multiple criteria."""
-    # Extract components from representations
-    tfidf_vectorizer = representations['tfidf_vectorizer']
-    tfidf_matrix = representations['tfidf_matrix']
-    svd = representations['svd']
-    lsi_matrix = representations['lsi_matrix']
+def find_best_match(test_prompt, embedding_data, combined_df, responses_df=None):
+    """Find most similar prompt using distributed embeddings."""
+    # Get components from embedding data
+    vectorizer = embedding_data['vectorizer']
+    svd = embedding_data['svd']
+    embeddings = embedding_data['embeddings']
     
-    # Process test prompt
-    processed_test = preprocess_text(test_prompt)
+    # Transform test prompt to get its embedding
+    processed_test_prompt = preprocess_text(test_prompt)
+    test_tfidf = vectorizer.transform([processed_test_prompt])
+    test_embedding = svd.transform(test_tfidf)
     
-    # 1. Get TF-IDF representation of test prompt
-    test_tfidf = tfidf_vectorizer.transform([processed_test])
+    # Normalize test embedding - handle zero vectors
+    test_norm = np.linalg.norm(test_embedding)
+    if test_norm > 0:
+        test_embedding = test_embedding / test_norm
     
-    # 2. Transform to LSI space
-    test_lsi = svd.transform(test_tfidf)
+    # Calculate similarity with all embeddings
+    similarities = np.dot(embeddings, test_embedding.T).flatten()
     
-    # 3. Calculate LSI similarity
-    lsi_similarities = cosine_similarity(test_lsi, lsi_matrix)[0]
+    # Get top candidates
+    top_n = 40  # Consider more candidates
+    top_indices = similarities.argsort()[-top_n:][::-1]
     
-    # 4. Calculate TF-IDF similarity directly
-    tfidf_similarities = cosine_similarity(test_tfidf, tfidf_matrix)[0]
-    
-    # 5. Get content words from test prompt
+    # Extract content words from test prompt
     test_content_words = extract_content_words(test_prompt)
-    test_length = len(test_prompt.split())
+    test_length = len(str(test_prompt).split())
     
-    # Select top candidates based on LSI similarity
-    top_n = 40  # Number of candidates to consider
-    top_indices = lsi_similarities.argsort()[-top_n:][::-1]
-    
-    # Create more detailed scores for top candidates
+    # Score candidates on additional metrics
     candidate_scores = []
     
     for idx in top_indices:
         train_prompt = combined_df.iloc[idx]["user_prompt"]
         train_id = combined_df.iloc[idx]["conversation_id"]
         
-        # Basic similarity scores
-        lsi_sim = lsi_similarities[idx]
-        tfidf_sim = tfidf_similarities[idx]
+        # 1. Embedding similarity (from LSA)
+        embedding_score = similarities[idx]
         
-        # Content word overlap
+        # 2. Content word overlap
         train_content_words = extract_content_words(train_prompt)
-        word_overlap = 0
-        if len(test_content_words) > 0:
-            word_overlap = len(test_content_words.intersection(train_content_words)) / len(test_content_words)
+        word_overlap = len(test_content_words.intersection(train_content_words)) / max(1, len(test_content_words))
         
-        # Length similarity
-        train_length = len(train_prompt.split())
+        # 3. Length similarity
+        train_length = len(str(train_prompt).split())
         length_ratio = min(test_length, train_length) / max(test_length, train_length) if max(test_length, train_length) > 0 else 0
         
-        # Response quality assessment
-        response_quality = 0.5  # Default
-        
+        # 4. Response quality
+        response_score = 0.5  # Default
         if responses_df is not None:
             response_rows = responses_df[responses_df["conversation_id"] == train_id]
             if not response_rows.empty:
                 response = str(response_rows.iloc[0]["model_response"])
                 
-                # Length-based quality score
+                # Response length (moderate length responses tend to have better BLEU)
                 resp_len = len(response.split())
-                if 20 <= resp_len <= 300:  # Ideal length
-                    length_score = 0.9
-                elif resp_len < 20:  # Too short
+                length_score = 0.0
+                if resp_len > 20 and resp_len < 300:  # Sweet spot for response length
+                    length_score = 0.8
+                elif resp_len <= 20:
                     length_score = 0.3
-                else:  # Too long
-                    length_score = 0.6
+                else:
+                    length_score = 0.5
                 
-                # Check for generic responses
+                # Response specificity
+                content_word_count = len(set(response.lower().split()).intersection(test_content_words))
+                specificity_score = min(1.0, content_word_count / max(1, len(test_content_words)))
+                
+                # Not too generic
                 generic_phrases = ['i dont know', 'cannot', 'sorry', 'ai', 'language model']
-                generic_penalty = 1.0
+                generic_score = 1.0
                 for phrase in generic_phrases:
                     if phrase in response.lower():
-                        generic_penalty *= 0.7
+                        generic_score *= 0.8
                 
-                # Check for content word presence
-                content_matches = len(set(response.lower().split()).intersection(test_content_words))
-                content_score = min(1.0, content_matches / max(1, len(test_content_words)))
-                
-                # Final response quality score
-                response_quality = (length_score + generic_penalty + content_score) / 3
+                response_score = (length_score + specificity_score + generic_score) / 3
         
-        # Combined score with tuned weights
+        # Calculate final combined score
         combined_score = (
-            0.30 * lsi_sim +         # LSI semantic similarity
-            0.20 * tfidf_sim +       # Direct TF-IDF similarity
-            0.25 * word_overlap +    # Content word overlap
-            0.15 * length_ratio +    # Length similarity
-            0.10 * response_quality  # Response quality
+            0.40 * embedding_score +  # Embedding similarity (distributed representation)
+            0.35 * word_overlap +     # Content overlap
+            0.10 * length_ratio +     # Length similarity
+            0.15 * response_score     # Response quality
         )
         
         candidate_scores.append((idx, combined_score))
     
-    # Sort by combined score
+    # Sort by combined score and select the best
     candidate_scores.sort(key=lambda x: x[1], reverse=True)
-    
-    # Return the best match
     best_idx = candidate_scores[0][0]
+    
     return best_idx
 
 def main(dataset="test"):
     """Main retrieval function for Track 2."""
-    print(f"Running improved Track 2 retrieval for {dataset} dataset...")
+    print(f"Running Track 2 retrieval for {dataset} dataset...")
     
     # 1) Load data
     combined_df, target_df, output_file, responses_df = load_data(dataset)
     print(f"Loaded {len(combined_df)} prompts in retrieval pool")
     print(f"Loaded {len(target_df)} {dataset} prompts")
     
-    # 2) Build representations
-    representations = build_representations(combined_df["user_prompt"])
+    # 2) Build distributed embeddings using LSA
+    embedding_data = build_embeddings(combined_df["user_prompt"])
     
     # 3) Find best matches for each target prompt
     results = []
@@ -243,7 +245,7 @@ def main(dataset="test"):
         test_prompt = row["user_prompt"]
         
         # Find best match
-        best_idx = find_matching_responses(test_prompt, combined_df, representations, responses_df)
+        best_idx = find_best_match(test_prompt, embedding_data, combined_df, responses_df)
         best_id = combined_df.iloc[best_idx]["conversation_id"]
         
         # Store result
@@ -259,7 +261,7 @@ def main(dataset="test"):
     # 4) Save results
     results_df = pd.DataFrame(results)
     results_df.to_csv(output_file, index=False)
-    print(f"Results saved to {output_file}")
+    print(f"Results saved to dump/track_2_{dataset}.csv")
     
     # Print statistics for dev set
     if dataset == "dev":

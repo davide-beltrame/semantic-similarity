@@ -3,12 +3,34 @@ import os
 import importlib.util
 from nltk.translate.bleu_score import sentence_bleu, SmoothingFunction
 
+def create_banner(title, width=60):
+    """Create a centered banner with equal signs."""
+    if len(title) + 2 > width:  # +2 for spaces on each side
+        return f"{'=' * 5} {title} {'=' * 5}"
+    
+    remaining = width - len(title) - 2  # -2 for the spaces
+    padding = remaining // 2
+    
+    # If odd number, add one more = to the end
+    if remaining % 2 == 1:
+        return f"{'=' * padding} {title} {'=' * (padding + 1)}"
+    else:
+        return f"{'=' * padding} {title} {'=' * padding}"
+
 def import_module_from_file(module_name, file_path):
     """Import a module from file path."""
     spec = importlib.util.spec_from_file_location(module_name, file_path)
     module = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(module)
     return module
+
+def ensure_dump_folder():
+    """Ensure dump folder exists."""
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    dump_dir = os.path.join(os.path.dirname(script_dir), "dump")
+    if not os.path.exists(dump_dir):
+        os.makedirs(dump_dir)
+    return dump_dir
 
 def evaluate_predictions(pred_file="track_1_dev.csv", dataset="dev"):
     """
@@ -17,6 +39,7 @@ def evaluate_predictions(pred_file="track_1_dev.csv", dataset="dev"):
     # Get the current directory
     script_dir = os.path.dirname(os.path.abspath(__file__))
     data_dir = os.path.join(os.path.dirname(script_dir), "data")
+    dump_dir = ensure_dump_folder()
     
     # Construct file paths
     pred_path = os.path.join(os.path.dirname(script_dir), pred_file)
@@ -114,16 +137,18 @@ def evaluate_predictions(pred_file="track_1_dev.csv", dataset="dev"):
     avg_bleu = merged["bleu_score"].mean()
     print(f"\nAverage BLEU score: {avg_bleu:.4f}")
     
+    # Save to dump folder
     output_file = f"evaluation_{dataset}_{os.path.basename(pred_file)}"
-    output_path = os.path.join(os.path.dirname(script_dir), output_file)
+    output_path = os.path.join(dump_dir, output_file)
     merged.to_csv(output_path, index=False)
-    print(f"Detailed evaluation results saved to {output_file}")
+    print(f"Detailed evaluation results saved to dump/{output_file}")
     
-    return merged
+    return merged, avg_bleu
 
 def run_full_evaluation(module_name, dataset="dev"):
     """Run retrieval and then evaluate the results."""
-    print(f"\n{'='*20} RUNNING EVALUATION WITH {module_name} ON {dataset.upper()} {'='*20}\n")
+    header = f"RUNNING EVALUATION WITH {module_name} ON {dataset.upper()}"
+    print(f"\n{create_banner(header)}\n")
     
     # Determine track number from module name
     track = '1'  # Default
@@ -145,13 +170,14 @@ def run_full_evaluation(module_name, dataset="dev"):
     # Step 2: Run evaluation
     print(f"\nStep 2: Running evaluation for {dataset} dataset")
     if dataset == "dev" or os.path.exists(os.path.join("data", f"{dataset}_responses.csv")):
-        evaluate_predictions(os.path.basename(pred_file), dataset)
+        result, bleu_score = evaluate_predictions(os.path.basename(pred_file), dataset)
     else:
         print(f"Skipping evaluation for {dataset} dataset: no ground truth responses available")
+        bleu_score = None
     
-    print(f"\n{'='*20} EVALUATION COMPLETED {'='*20}\n")
+    print(f"\n{create_banner('EVALUATION COMPLETED')}\n")
     
-    return pred_file
+    return pred_file, bleu_score
 
 if __name__ == "__main__":
     import sys
