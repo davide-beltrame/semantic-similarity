@@ -68,39 +68,43 @@ def load_data(dataset="test"):
     
     return combined_df, target_df, output_file, responses_df
 
-def build_embeddings(prompts):
-    """Build distributed embeddings using TF-IDF + LSA (Latent Semantic Analysis)."""
-    print("Building distributed representations...")
+def build_representations(train_prompts):
+    """Build both TF-IDF and LSI representations."""
+    print("Building text representations...")
     
-    # 1. Preprocess all prompts
-    processed_prompts = [preprocess_text(prompt) for prompt in prompts]
+    # Preprocess all prompts
+    processed_prompts = [preprocess_text(prompt) for prompt in train_prompts]
     
-    # 2. Create TF-IDF matrix
+    # 1. Create TF-IDF representation
     print("Computing TF-IDF matrix...")
-    vectorizer = TfidfVectorizer(
+    tfidf_vectorizer = TfidfVectorizer(
+        analyzer='word',
         stop_words='english',
-        ngram_range=(1, 2),
-        min_df=2, 
-        max_df=0.9
+        ngram_range=(1, 2),  # Use unigrams and bigrams
+        min_df=2,            # Ignore terms appearing in less than 2 documents
+        max_df=0.9,          # Ignore terms appearing in more than 90% of documents
+        max_features=20000   # Limit vocabulary size for efficiency
     )
-    tfidf_matrix = vectorizer.fit_transform(processed_prompts)
+    
+    tfidf_matrix = tfidf_vectorizer.fit_transform(processed_prompts)
     print(f"TF-IDF matrix shape: {tfidf_matrix.shape}")
     
-    # 3. Apply SVD for dimensionality reduction (this creates distributed representations)
-    print("Applying SVD for dimensionality reduction...")
-    n_components = 300  # Number of dimensions for our embeddings
+    # 2. Apply LSI (Latent Semantic Indexing) to create distributed representation
+    print("Creating LSI representation...")
+    n_components = 150  # Dimensionality of LSI space
     svd = TruncatedSVD(n_components=n_components, random_state=42)
-    distributed_embeddings = svd.fit_transform(tfidf_matrix)
-    print(f"Distributed embeddings shape: {distributed_embeddings.shape}")
+    lsi_matrix = svd.fit_transform(tfidf_matrix)
+    print(f"LSI matrix shape: {lsi_matrix.shape}")
     
-    # 4. Normalize embeddings for better cosine similarity
-    row_norms = np.linalg.norm(distributed_embeddings, axis=1)
-    normalized_embeddings = distributed_embeddings / row_norms[:, np.newaxis]
+    # Explained variance as diagnostic
+    explained_variance = svd.explained_variance_ratio_.sum()
+    print(f"Explained variance: {explained_variance:.4f}")
     
     return {
-        'vectorizer': vectorizer,
-        'svd': svd,
-        'embeddings': normalized_embeddings,
+        'tfidf_vectorizer': tfidf_vectorizer,
+        'tfidf_matrix': tfidf_matrix,
+        'svd': svd, 
+        'lsi_matrix': lsi_matrix,
         'processed_prompts': processed_prompts
     }
 
@@ -118,107 +122,118 @@ def extract_content_words(text):
     content_words = [word for word in words if word not in stopwords and len(word) > 2]
     return set(content_words)
 
-def find_best_match(test_prompt, embedding_data, combined_df, responses_df=None):
-    """Find most similar prompt using distributed embeddings."""
-    # Get components from embedding data
-    vectorizer = embedding_data['vectorizer']
-    svd = embedding_data['svd']
-    embeddings = embedding_data['embeddings']
+def find_matching_responses(test_prompt, combined_df, representations, responses_df=None):
+    """Find best matching response using multiple criteria."""
+    # Extract components from representations
+    tfidf_vectorizer = representations['tfidf_vectorizer']
+    tfidf_matrix = representations['tfidf_matrix']
+    svd = representations['svd']
+    lsi_matrix = representations['lsi_matrix']
     
-    # Transform test prompt to get its embedding
-    processed_test_prompt = preprocess_text(test_prompt)
-    test_tfidf = vectorizer.transform([processed_test_prompt])
-    test_embedding = svd.transform(test_tfidf)
+    # Process test prompt
+    processed_test = preprocess_text(test_prompt)
     
-    # Normalize test embedding
-    test_embedding = test_embedding / np.linalg.norm(test_embedding)
+    # 1. Get TF-IDF representation of test prompt
+    test_tfidf = tfidf_vectorizer.transform([processed_test])
     
-    # Calculate similarity with all embeddings
-    similarities = np.dot(embeddings, test_embedding.T).flatten()
+    # 2. Transform to LSI space
+    test_lsi = svd.transform(test_tfidf)
     
-    # Get top candidates
-    top_n = 40  # Consider more candidates
-    top_indices = similarities.argsort()[-top_n:][::-1]
+    # 3. Calculate LSI similarity
+    lsi_similarities = cosine_similarity(test_lsi, lsi_matrix)[0]
     
-    # Extract content words from test prompt
+    # 4. Calculate TF-IDF similarity directly
+    tfidf_similarities = cosine_similarity(test_tfidf, tfidf_matrix)[0]
+    
+    # 5. Get content words from test prompt
     test_content_words = extract_content_words(test_prompt)
-    test_length = len(str(test_prompt).split())
+    test_length = len(test_prompt.split())
     
-    # Score candidates on additional metrics
+    # Select top candidates based on LSI similarity
+    top_n = 40  # Number of candidates to consider
+    top_indices = lsi_similarities.argsort()[-top_n:][::-1]
+    
+    # Create more detailed scores for top candidates
     candidate_scores = []
     
     for idx in top_indices:
         train_prompt = combined_df.iloc[idx]["user_prompt"]
         train_id = combined_df.iloc[idx]["conversation_id"]
         
-        # 1. Embedding similarity (from LSA)
-        embedding_score = similarities[idx]
+        # Basic similarity scores
+        lsi_sim = lsi_similarities[idx]
+        tfidf_sim = tfidf_similarities[idx]
         
-        # 2. Content word overlap
+        # Content word overlap
         train_content_words = extract_content_words(train_prompt)
-        word_overlap = len(test_content_words.intersection(train_content_words)) / max(1, len(test_content_words))
+        word_overlap = 0
+        if len(test_content_words) > 0:
+            word_overlap = len(test_content_words.intersection(train_content_words)) / len(test_content_words)
         
-        # 3. Length similarity
-        train_length = len(str(train_prompt).split())
+        # Length similarity
+        train_length = len(train_prompt.split())
         length_ratio = min(test_length, train_length) / max(test_length, train_length) if max(test_length, train_length) > 0 else 0
         
-        # 4. Response quality
-        response_score = 0.5  # Default
+        # Response quality assessment
+        response_quality = 0.5  # Default
+        
         if responses_df is not None:
             response_rows = responses_df[responses_df["conversation_id"] == train_id]
             if not response_rows.empty:
                 response = str(response_rows.iloc[0]["model_response"])
                 
-                # Response length (moderate length responses tend to have better BLEU)
+                # Length-based quality score
                 resp_len = len(response.split())
-                length_score = 0.0
-                if resp_len > 20 and resp_len < 300:  # Sweet spot for response length
-                    length_score = 0.8
-                elif resp_len <= 20:
+                if 20 <= resp_len <= 300:  # Ideal length
+                    length_score = 0.9
+                elif resp_len < 20:  # Too short
                     length_score = 0.3
-                else:
-                    length_score = 0.5
+                else:  # Too long
+                    length_score = 0.6
                 
-                # Response specificity
-                content_word_count = len(set(response.lower().split()).intersection(test_content_words))
-                specificity_score = min(1.0, content_word_count / max(1, len(test_content_words)))
-                
-                # Not too generic
+                # Check for generic responses
                 generic_phrases = ['i dont know', 'cannot', 'sorry', 'ai', 'language model']
-                generic_score = 1.0
+                generic_penalty = 1.0
                 for phrase in generic_phrases:
                     if phrase in response.lower():
-                        generic_score *= 0.8
+                        generic_penalty *= 0.7
                 
-                response_score = (length_score + specificity_score + generic_score) / 3
+                # Check for content word presence
+                content_matches = len(set(response.lower().split()).intersection(test_content_words))
+                content_score = min(1.0, content_matches / max(1, len(test_content_words)))
+                
+                # Final response quality score
+                response_quality = (length_score + generic_penalty + content_score) / 3
         
-        # Calculate final combined score
+        # Combined score with tuned weights
         combined_score = (
-            0.45 * embedding_score +  # Embedding similarity
-            0.30 * word_overlap +     # Content overlap
-            0.10 * length_ratio +     # Length similarity
-            0.15 * response_score     # Response quality
+            0.30 * lsi_sim +         # LSI semantic similarity
+            0.20 * tfidf_sim +       # Direct TF-IDF similarity
+            0.25 * word_overlap +    # Content word overlap
+            0.15 * length_ratio +    # Length similarity
+            0.10 * response_quality  # Response quality
         )
         
         candidate_scores.append((idx, combined_score))
     
-    # Sort by combined score and select the best
+    # Sort by combined score
     candidate_scores.sort(key=lambda x: x[1], reverse=True)
-    best_idx = candidate_scores[0][0]
     
+    # Return the best match
+    best_idx = candidate_scores[0][0]
     return best_idx
 
 def main(dataset="test"):
     """Main retrieval function for Track 2."""
-    print(f"Running Track 2 retrieval for {dataset} dataset...")
+    print(f"Running improved Track 2 retrieval for {dataset} dataset...")
     
     # 1) Load data
     combined_df, target_df, output_file, responses_df = load_data(dataset)
     print(f"Loaded {len(combined_df)} prompts in retrieval pool")
     print(f"Loaded {len(target_df)} {dataset} prompts")
     
-    # 2) Build distributed embeddings using LSA
-    embedding_data = build_embeddings(combined_df["user_prompt"])
+    # 2) Build representations
+    representations = build_representations(combined_df["user_prompt"])
     
     # 3) Find best matches for each target prompt
     results = []
@@ -228,7 +243,7 @@ def main(dataset="test"):
         test_prompt = row["user_prompt"]
         
         # Find best match
-        best_idx = find_best_match(test_prompt, embedding_data, combined_df, responses_df)
+        best_idx = find_matching_responses(test_prompt, combined_df, representations, responses_df)
         best_id = combined_df.iloc[best_idx]["conversation_id"]
         
         # Store result
