@@ -1,7 +1,7 @@
 import pandas as pd
 import os
 import sys
-from retrieval_simple import main as retrieval_main
+from track2_simple import main as retrieval_main
 from nltk.translate.bleu_score import sentence_bleu, SmoothingFunction
 
 def evaluate_predictions(pred_file="track_1_dev.csv", dataset="dev"):
