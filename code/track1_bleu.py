@@ -13,11 +13,19 @@ def preprocess_text(text):
     text = re.sub(r'\s+', ' ', text).strip()
     return text
 
+def ensure_dump_folder():
+    """Ensure the dump folder exists."""
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    dump_dir = os.path.join(os.path.dirname(script_dir), "dump")
+    os.makedirs(dump_dir, exist_ok=True)
+    return dump_dir
+
 def load_data(dataset="test"):
     """Load data for retrieval."""
     # Get the current directory
     script_dir = os.path.dirname(os.path.abspath(__file__))
     data_dir = os.path.join(os.path.dirname(script_dir), "data")
+    dump_dir = ensure_dump_folder()
     
     # Load training data
     train_prompts_path = os.path.join(data_dir, "train_prompts.csv")
@@ -36,7 +44,7 @@ def load_data(dataset="test"):
     if dataset == "test":
         test_prompts_path = os.path.join(data_dir, "test_prompts.csv")
         target_df = pd.read_csv(test_prompts_path)
-        output_file = os.path.join(os.path.dirname(script_dir), "track_1_test.csv")
+        output_file = os.path.join(dump_dir, "track_1_test.csv")
         
         # For test data, include dev data in retrieval pool
         dev_prompts_path = os.path.join(data_dir, "dev_prompts.csv")
@@ -59,7 +67,7 @@ def load_data(dataset="test"):
     else:  # dataset == "dev"
         dev_prompts_path = os.path.join(data_dir, "dev_prompts.csv")
         target_df = pd.read_csv(dev_prompts_path)
-        output_file = os.path.join(os.path.dirname(script_dir), "track_1_dev.csv")
+        output_file = os.path.join(dump_dir, "track1_bleu_evaluation.csv")
         
         # For dev data, only use train data as retrieval pool
         combined_df = train_df.copy()

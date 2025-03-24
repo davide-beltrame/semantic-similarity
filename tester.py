@@ -1,92 +1,129 @@
+#!/usr/bin/env python3
 import os
 import sys
-import time
 import argparse
-import importlib
+import subprocess
 import pandas as pd
 from nltk.translate.bleu_score import sentence_bleu, SmoothingFunction
 
-def compute_bleu(reference, hypothesis):
-    smoothing = SmoothingFunction()
-    # Convert values to strings to avoid errors when calling .split()
-    ref_str = str(reference) if reference is not None else ""
-    hyp_str = str(hypothesis) if hypothesis is not None else ""
-    return sentence_bleu([ref_str.split()], hyp_str.split(),
-                         weights=(0.5, 0.5, 0, 0),
-                         smoothing_function=smoothing.method3)
+# ===================== PARAMETERS =====================
+DATA_DIR = "data"  # Directory for CSV data files
+DUMP_DIR = "dump"  # Directory where retrieval files are saved
+DEV_RESPONSES_FILE = os.path.join(DATA_DIR, "dev_responses.csv")
+TRAIN_RESPONSES_FILE = os.path.join(DATA_DIR, "train_responses.csv")
+# ======================================================
 
+def run_retrieval(script_path, use_dev=True):
+    """
+    Runs the given retrieval script (e.g., track1_countvec.py) via a subprocess.
+    The '--use_dev' flag directs the script to process the dev set.
+    """
+    cmd = ["python3", script_path]
+    if use_dev:
+        cmd.append("--use_dev")
+    print("Running retrieval command:", " ".join(cmd))
+    subprocess.run(cmd, check=True)
+
+def compute_bleu_scores(retrieval_file):
+    """
+    Computes BLEU scores between the retrieved responses and the actual responses.
+    The retrieval file should have columns: conversation_id (query) and response_id (retrieved candidate).
+    Actual responses for queries are loaded from DEV_RESPONSES_FILE.
+    The retrieved response text is obtained from train responses only.
+    """
+    # Load retrieval output (for queries)
+    retrieval_df = pd.read_csv(retrieval_file)
+    
+    # Load actual responses for query prompts (dev set)
+    dev_responses = pd.read_csv(DEV_RESPONSES_FILE)
+    
+    # Merge to get the actual response for each query
+    merged = pd.merge(retrieval_df, dev_responses, on="conversation_id", how="left")
+    merged.rename(columns={"model_response": "actual_response"}, inplace=True)
+    
+    # Use only train responses as the candidate pool (don't use dev responses)
+    candidate_pool = pd.read_csv(TRAIN_RESPONSES_FILE)
+    candidate_pool = candidate_pool[['conversation_id', 'model_response']]
+    
+    # Merge to get retrieved response text using the candidate's conversation_id (response_id)
+    merged = pd.merge(
+        merged, 
+        candidate_pool, 
+        left_on="response_id", 
+        right_on="conversation_id",
+        how="left", 
+        suffixes=("", "_retrieved")
+    )
+    merged.rename(columns={"model_response": "retrieved_response"}, inplace=True)
+    
+    # Check for missing retrieved responses
+    missing_count = merged['retrieved_response'].isna().sum()
+    if missing_count > 0:
+        print(f"Warning: {missing_count} retrieved responses could not be found in the train set.")
+    
+    # Check for self-matches
+    self_matches = (merged['conversation_id'] == merged['response_id']).sum()
+    if self_matches > 0:
+        print(f"Warning: {self_matches} self-matches found. Algorithm might be retrieving dev responses.")
+    
+    # Compute BLEU scores for each query (using weights for 1-gram and 2-gram overlap)
+    smoothing = SmoothingFunction().method3
+    merged['bleu_score'] = merged.apply(
+        lambda x: sentence_bleu(
+            [str(x['actual_response']).split()],
+            str(x['retrieved_response']).split(),
+            weights=(0.5, 0.5, 0, 0),
+            smoothing_function=smoothing
+        ) if pd.notna(x['retrieved_response']) else 0,
+        axis=1
+    )
+    
+    avg_bleu = merged['bleu_score'].mean()
+    return merged, avg_bleu
 
 def main():
-    parser = argparse.ArgumentParser(description='Test retrieval and evaluation for semantic similarity task.')
-    parser.add_argument('module_name', type=str, help='Retrieval module name (e.g., "track2_simple")')
-    parser.add_argument('--dataset', type=str, choices=['dev', 'test'], default='dev', help='Dataset to use (dev or test)')
-    parser.add_argument('--retrieval-only', action='store_true', help='Run only retrieval, skip evaluation')
-    
+    parser = argparse.ArgumentParser(description="Tester for retrieval system")
+    parser.add_argument("script", help="Path to the retrieval script (e.g., code/track1_countvec.py)")
+    parser.add_argument("--output", default=None, help="Custom output file name for retrieval results")
     args = parser.parse_args()
     
-    print(f"\n{'='*20} TESTING {args.module_name} ON {args.dataset.upper()} {'='*20}\n")
+    # Run retrieval on dev set
+    run_retrieval(args.script, use_dev=True)
     
-    total_start_time = time.time()
-    
-    # Determine script directory
-    script_dir = os.path.dirname(os.path.abspath(__file__))
-    
-    # Get track number from module name (default to 1)
-    track = '1'
-    if args.module_name.startswith('track') and any(c.isdigit() for c in args.module_name):
-        track = next(c for c in args.module_name if c.isdigit())
-    
-    # Check if the retrieval module exists in the code directory
-    module_path = os.path.join(script_dir, "code", f"{args.module_name}.py")
-    if not os.path.exists(module_path):
-        print(f"Error: Module {args.module_name}.py not found!")
-        return
-    
-    # Run retrieval: insert code directory and import the module
-    retrieval_start = time.time()
-    sys.path.insert(0, os.path.join(script_dir, "code"))
-    try:
-        retrieval_module = importlib.import_module(args.module_name)
-        retrieval_module.main(args.dataset)
-        retrieval_time = time.time() - retrieval_start
-        print(f"Retrieval completed in {retrieval_time:.2f} seconds")
-    except Exception as e:
-        print(f"Error running retrieval: {e}")
-        return
-
-    # If running on DEV, load the evaluation file and compute BLEU scores
-    if args.dataset == 'dev':
-        # The retrieval module should output an evaluation CSV with at least:
-        # 'conversation_id', 'user_prompt', 'model_response', 'retrieved_response'
-        eval_csv_path = os.path.join(script_dir, f"dump/{args.module_name}_evaluation.csv")
-        if not os.path.exists(eval_csv_path):
-            print(f"Error: Evaluation results file not found at {eval_csv_path}")
-            return
-
-        df = pd.read_csv(eval_csv_path)
-        if 'model_response' not in df.columns or 'retrieved_response' not in df.columns:
-            print("Error: Required columns 'model_response' or 'retrieved_response' not found in evaluation file.")
-            return
+    # Get retrieval file name
+    if args.output:
+        retrieval_file = os.path.join(DUMP_DIR, args.output)
+    else:
+        # Try to find the file based on script name
+        script_base = os.path.basename(args.script).replace('.py', '')
+        potential_files = [
+            os.path.join(DUMP_DIR, f"{script_base}_dev.csv"),
+            os.path.join(DUMP_DIR, f"track1_{script_base}_dev.csv"),
+            os.path.join(DUMP_DIR, f"track1_dev.csv")
+        ]
         
-        bleu_scores = []
-        for _, row in df.iterrows():
-            bleu = compute_bleu(row['model_response'], row['retrieved_response'])
-            bleu_scores.append(bleu)
-        df['bleu_score'] = bleu_scores
-        avg_bleu = sum(bleu_scores) / len(bleu_scores) if bleu_scores else 0.0
-        print(f"Average BLEU score: {avg_bleu:.4f}")
-        # Optionally, update the CSV with the BLEU scores
-        df.to_csv(eval_csv_path, index=False)
+        retrieval_file = None
+        for file in potential_files:
+            if os.path.exists(file):
+                retrieval_file = file
+                break
+                
+        if retrieval_file is None:
+            print(f"Error: Retrieval file not found in {DUMP_DIR}.")
+            print(f"Checked: {', '.join(potential_files)}")
+            print("Please specify output file with --output.")
+            sys.exit(1)
     
-    # For the TEST dataset, we assume the retrieval module only outputs the required CSV.
+    print(f"Evaluating retrieval file: {retrieval_file}")
+    merged, avg_bleu = compute_bleu_scores(retrieval_file)
     
-    total_time = time.time() - total_start_time
-    print(f"\n{'='*20} TESTING SUMMARY {'='*20}")
-    print(f"Module: {args.module_name}")
-    print(f"Track: {track}")
-    print(f"Dataset: {args.dataset}")
-    print(f"Total time: {total_time:.2f} seconds")
-    print(f"{'='*20} TEST COMPLETED {'='*20}\n")
+    print("\nEvaluation Results:")
+    print("Average BLEU score on dev set:", avg_bleu)
+    
+    # Save detailed results
+    output_eval_file = os.path.join(DUMP_DIR, f"eval_{os.path.basename(retrieval_file)}")
+    merged.to_csv(output_eval_file, index=False)
+    print(f"Detailed evaluation saved to: {output_eval_file}")
 
 if __name__ == "__main__":
     main()
