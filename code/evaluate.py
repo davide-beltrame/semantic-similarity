@@ -1,10 +1,10 @@
 import pandas as pd
 import os
 import sys
-from track2_simple import main as retrieval_main
+from track1_simple import main as retrieval_main
 from nltk.translate.bleu_score import sentence_bleu, SmoothingFunction
 
-def evaluate_predictions(pred_file="track_1_dev.csv", dataset="dev"):
+def evaluate_predictions(pred_file="dump/track_1_dev.csv", dataset="dev"):
     """
     Evaluate the predictions in the given file against the ground truth.
     """
@@ -108,7 +108,7 @@ def evaluate_predictions(pred_file="track_1_dev.csv", dataset="dev"):
     avg_bleu = merged["bleu_score"].mean()
     print(f"\nAverage BLEU score: {avg_bleu:.4f}")
     
-    output_file = f"evaluation_{dataset}_{os.path.basename(pred_file)}"
+    output_file = f"../dump/evaluation_{dataset}_{os.path.basename(pred_file)}"
     output_path = os.path.join(os.path.dirname(script_dir), output_file)
     merged.to_csv(output_path, index=False)
     print(f"Detailed evaluation results saved to {output_file}")
