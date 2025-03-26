@@ -7,16 +7,17 @@ import pandas as pd
 from nltk.translate.bleu_score import sentence_bleu, SmoothingFunction
 
 # ===================== PARAMETERS =====================
-DATA_DIR = "data"  # Directory for CSV data files
-DUMP_DIR = "dump"  # Directory where retrieval files are saved
+DATA_DIR = "data"      # Directory for CSV data files
+DUMP_DIR = "dump"      # Directory where retrieval files are saved
 DEV_RESPONSES_FILE = os.path.join(DATA_DIR, "dev_responses.csv")
 TRAIN_RESPONSES_FILE = os.path.join(DATA_DIR, "train_responses.csv")
 # ======================================================
 
 def run_retrieval(script_path, use_dev=True):
     """
-    Runs the given retrieval script (e.g., track1_countvec.py) via a subprocess.
-    The '--use_dev' flag directs the script to process the dev set.
+    Runs the given retrieval script via a subprocess.
+    When use_dev is True, the '--use_dev' flag directs the script to process the dev set.
+    For test mode, the script is run without the flag.
     """
     cmd = ["python3", script_path]
     if use_dev:
@@ -82,25 +83,36 @@ def compute_bleu_scores(retrieval_file):
     return merged, avg_bleu
 
 def main():
-    parser = argparse.ArgumentParser(description="Tester for retrieval system")
+    parser = argparse.ArgumentParser(
+        description="Tester for retrieval system. Use --mode dev for BLEU evaluation (dev set) or --mode test to dump test responses."
+    )
     parser.add_argument("script", help="Path to the retrieval script (e.g., code/track1_countvec.py)")
+    parser.add_argument("--mode", choices=["dev", "test"], default="dev",
+                        help="Set to 'dev' to evaluate with BLEU scores, or 'test' to dump test responses.")
     parser.add_argument("--output", default=None, help="Custom output file name for retrieval results")
     args = parser.parse_args()
     
-    # Run retrieval on dev set
-    run_retrieval(args.script, use_dev=True)
+    # Run retrieval: if mode is dev, use the dev flag; otherwise, test mode.
+    run_retrieval(args.script, use_dev=(args.mode=="dev"))
     
-    # Get retrieval file name
+    # Determine the retrieval file name based on the script and mode
     if args.output:
         retrieval_file = os.path.join(DUMP_DIR, args.output)
     else:
-        # Try to find the file based on script name
         script_base = os.path.basename(args.script).replace('.py', '')
-        potential_files = [
-            os.path.join(DUMP_DIR, f"{script_base}_dev.csv"),
-            os.path.join(DUMP_DIR, f"track1_{script_base}_dev.csv"),
-            os.path.join(DUMP_DIR, f"track1_dev.csv")
-        ]
+        # Build potential file names based on mode
+        if args.mode == "dev":
+            potential_files = [
+                os.path.join(DUMP_DIR, f"{script_base}_dev.csv"),
+                os.path.join(DUMP_DIR, f"track1_{script_base}_dev.csv"),
+                os.path.join(DUMP_DIR, "track1_dev.csv")
+            ]
+        else:  # test mode
+            potential_files = [
+                os.path.join(DUMP_DIR, f"{script_base}_test.csv"),
+                os.path.join(DUMP_DIR, f"track1_{script_base}_test.csv"),
+                os.path.join(DUMP_DIR, "track1_test.csv")
+            ]
         
         retrieval_file = None
         for file in potential_files:
@@ -114,16 +126,23 @@ def main():
             print("Please specify output file with --output.")
             sys.exit(1)
     
-    print(f"Evaluating retrieval file: {retrieval_file}")
-    merged, avg_bleu = compute_bleu_scores(retrieval_file)
+    print(f"Retrieval file: {retrieval_file}")
     
-    print("\nEvaluation Results:")
-    print("Average BLEU score on dev set:", avg_bleu)
+    if args.mode == "dev":
+        print("Evaluating dev set with BLEU scores...")
+        merged, avg_bleu = compute_bleu_scores(retrieval_file)
+        print("\nEvaluation Results:")
+        print("Average BLEU score on dev set:", avg_bleu)
+        
+        output_eval_file = os.path.join(DUMP_DIR, f"eval_{os.path.basename(retrieval_file)}")
+        merged.to_csv(output_eval_file, index=False)
+        print(f"Detailed evaluation saved to: {output_eval_file}")
+    else:
+        # Test mode: just dump the retrieval file (predicted responses)
+        print("Test mode: Retrieval file with predicted responses is dumped.")
+        # Optionally, you might want to print a few lines:
+        df = pd.read_csv(retrieval_file)
+        print(df.head())
     
-    # Save detailed results
-    output_eval_file = os.path.join(DUMP_DIR, f"eval_{os.path.basename(retrieval_file)}")
-    merged.to_csv(output_eval_file, index=False)
-    print(f"Detailed evaluation saved to: {output_eval_file}")
-
 if __name__ == "__main__":
     main()
