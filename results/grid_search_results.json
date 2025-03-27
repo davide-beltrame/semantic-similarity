@@ -1,0 +1,53 @@
+{
+  "results": [
+    {
+      "model": "all-mpnet-base-v2",
+      "preprocessing": "basic",
+      "similarity_metric": "cosine",
+      "response_filtering": true,
+      "bleu_score": 0.10802141026594209
+    },
+    {
+      "model": "all-mpnet-base-v2",
+      "preprocessing": "basic",
+      "similarity_metric": "euclidean",
+      "response_filtering": true,
+      "bleu_score": 0.10802141026594209
+    },
+    {
+      "model": "all-mpnet-base-v2",
+      "preprocessing": "basic",
+      "similarity_metric": "manhattan",
+      "response_filtering": true,
+      "bleu_score": 0.1079626009095487
+    },
+    {
+      "model": "all-mpnet-base-v2",
+      "preprocessing": "char_bounded",
+      "similarity_metric": "cosine",
+      "response_filtering": true,
+      "bleu_score": 0.10802141026594209
+    },
+    {
+      "model": "all-mpnet-base-v2",
+      "preprocessing": "char_bounded",
+      "similarity_metric": "euclidean",
+      "response_filtering": true,
+      "bleu_score": 0.10802141026594209
+    },
+    {
+      "model": "all-mpnet-base-v2",
+      "preprocessing": "char_bounded",
+      "similarity_metric": "manhattan",
+      "response_filtering": true,
+      "bleu_score": 0.1079626009095487
+    }
+  ],
+  "best_config": {
+    "model": "all-mpnet-base-v2",
+    "preprocessing": "basic",
+    "similarity_metric": "cosine",
+    "response_filtering": true,
+    "bleu_score": 0.10802141026594209
+  }
+}

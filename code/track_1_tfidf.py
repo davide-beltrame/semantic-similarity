@@ -93,11 +93,32 @@ def main():
         "predicted_response": [train_response_map.get(rid, "") for rid in best_train_ids],
         "bleu_score": bleu_scores
     })
-    output_csv = os.path.join(dump_dir, "dev_bleu_evaluation.csv")
+    output_csv = os.path.join(dump_dir, "track_1_dev.csv")
     results_df.to_csv(output_csv, index=False)
     
     # Print only the average BLEU score
     print(f"Average BLEU score: {avg_bleu:.5f}")
+    
+    # Process test data
+    df_test_prompts = pd.read_csv(os.path.join(data_dir, "test_prompts.csv"))
+    df_test_prompts['processed'] = df_test_prompts['user_prompt'].apply(preprocess_text)
+    
+    # Transform test prompts using the same vectorizer
+    tfidf_test = vectorizer.transform(df_test_prompts['processed'])
+    
+    # Compute similarities between test and train prompts
+    test_similarity_matrix = cosine_similarity(tfidf_test, tfidf_train)
+    test_best_indices = np.argmax(test_similarity_matrix, axis=1)
+    test_best_train_ids = df_train_prompts.iloc[test_best_indices]['conversation_id'].values
+    
+    # Create and save test submission file
+    test_results_df = pd.DataFrame({
+        "conversation_id": df_test_prompts['conversation_id'],
+        "response_id": test_best_train_ids
+    })
+    test_output_csv = os.path.join(dump_dir, "track_1_test.csv")
+    test_results_df.to_csv(test_output_csv, index=False)
+    print(f"Test predictions saved to: {test_output_csv}")
 
 if __name__ == "__main__":
     main()
