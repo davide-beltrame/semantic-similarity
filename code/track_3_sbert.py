@@ -30,7 +30,6 @@ MODEL_NAME = "all-mpnet-base-v2" # 0.10786308257756748
 #MODEL_NAME = "paraphrase-mpnet-base-v2" # 0.10241946736959553
 #MODEL_NAME = "all-distilroberta-v1" # 0.1028827366145876
 #MODEL_NAME = "multi-qa-mpnet-base-dot-v1" # 0.10346886872926038
-# Try these more powerful models:
 #MODEL_NAME = "gtr-t5-large" # 0.10658
 #MODEL_NAME = "gtr-t5-xl" # 0.10691
 #MODEL_NAME = "multi-qa-mpnet-base-dot-v1" # 0.10347
