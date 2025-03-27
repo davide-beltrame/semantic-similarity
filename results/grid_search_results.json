@@ -41,6 +41,216 @@
       "similarity_metric": "manhattan",
       "response_filtering": true,
       "bleu_score": 0.1079626009095487
+    },
+    {
+      "model": "all-mpnet-base-v2",
+      "preprocessing": "no_punct",
+      "similarity_metric": "cosine",
+      "response_filtering": true,
+      "bleu_score": 0.10501751519131171
+    },
+    {
+      "model": "all-mpnet-base-v2",
+      "preprocessing": "no_punct",
+      "similarity_metric": "euclidean",
+      "response_filtering": true,
+      "bleu_score": 0.10501751519131171
+    },
+    {
+      "model": "all-mpnet-base-v2",
+      "preprocessing": "no_punct",
+      "similarity_metric": "manhattan",
+      "response_filtering": true,
+      "bleu_score": 0.10590336292586862
+    },
+    {
+      "model": "all-mpnet-base-v2",
+      "preprocessing": "simple_tokens",
+      "similarity_metric": "cosine",
+      "response_filtering": true,
+      "bleu_score": 0.10501751519131171
+    },
+    {
+      "model": "all-mpnet-base-v2",
+      "preprocessing": "simple_tokens",
+      "similarity_metric": "euclidean",
+      "response_filtering": true,
+      "bleu_score": 0.10501751519131171
+    },
+    {
+      "model": "all-mpnet-base-v2",
+      "preprocessing": "simple_tokens",
+      "similarity_metric": "manhattan",
+      "response_filtering": true,
+      "bleu_score": 0.10590336292586862
+    },
+    {
+      "model": "all-MiniLM-L6-v2",
+      "preprocessing": "basic",
+      "similarity_metric": "cosine",
+      "response_filtering": true,
+      "bleu_score": 0.10242388339981963
+    },
+    {
+      "model": "all-MiniLM-L6-v2",
+      "preprocessing": "basic",
+      "similarity_metric": "euclidean",
+      "response_filtering": true,
+      "bleu_score": 0.10242388339981963
+    },
+    {
+      "model": "all-MiniLM-L6-v2",
+      "preprocessing": "basic",
+      "similarity_metric": "manhattan",
+      "response_filtering": true,
+      "bleu_score": 0.10221343301004382
+    },
+    {
+      "model": "all-MiniLM-L6-v2",
+      "preprocessing": "char_bounded",
+      "similarity_metric": "cosine",
+      "response_filtering": true,
+      "bleu_score": 0.10242388339981963
+    },
+    {
+      "model": "all-MiniLM-L6-v2",
+      "preprocessing": "char_bounded",
+      "similarity_metric": "euclidean",
+      "response_filtering": true,
+      "bleu_score": 0.10242388339981963
+    },
+    {
+      "model": "all-MiniLM-L6-v2",
+      "preprocessing": "char_bounded",
+      "similarity_metric": "manhattan",
+      "response_filtering": true,
+      "bleu_score": 0.10221343301004382
+    },
+    {
+      "model": "all-MiniLM-L6-v2",
+      "preprocessing": "no_punct",
+      "similarity_metric": "cosine",
+      "response_filtering": true,
+      "bleu_score": 0.10052350077765403
+    },
+    {
+      "model": "all-MiniLM-L6-v2",
+      "preprocessing": "no_punct",
+      "similarity_metric": "euclidean",
+      "response_filtering": true,
+      "bleu_score": 0.10052350077765403
+    },
+    {
+      "model": "all-MiniLM-L6-v2",
+      "preprocessing": "no_punct",
+      "similarity_metric": "manhattan",
+      "response_filtering": true,
+      "bleu_score": 0.09965993757290675
+    },
+    {
+      "model": "all-MiniLM-L6-v2",
+      "preprocessing": "simple_tokens",
+      "similarity_metric": "cosine",
+      "response_filtering": true,
+      "bleu_score": 0.10052350077765403
+    },
+    {
+      "model": "all-MiniLM-L6-v2",
+      "preprocessing": "simple_tokens",
+      "similarity_metric": "euclidean",
+      "response_filtering": true,
+      "bleu_score": 0.10052350077765403
+    },
+    {
+      "model": "all-MiniLM-L6-v2",
+      "preprocessing": "simple_tokens",
+      "similarity_metric": "manhattan",
+      "response_filtering": true,
+      "bleu_score": 0.09965993757290675
+    },
+    {
+      "model": "multi-qa-mpnet-base-dot-v1",
+      "preprocessing": "basic",
+      "similarity_metric": "cosine",
+      "response_filtering": true,
+      "bleu_score": 0.1035762985392917
+    },
+    {
+      "model": "multi-qa-mpnet-base-dot-v1",
+      "preprocessing": "basic",
+      "similarity_metric": "euclidean",
+      "response_filtering": true,
+      "bleu_score": 0.100265234245577
+    },
+    {
+      "model": "multi-qa-mpnet-base-dot-v1",
+      "preprocessing": "basic",
+      "similarity_metric": "manhattan",
+      "response_filtering": true,
+      "bleu_score": 0.1009517637704949
+    },
+    {
+      "model": "multi-qa-mpnet-base-dot-v1",
+      "preprocessing": "char_bounded",
+      "similarity_metric": "cosine",
+      "response_filtering": true,
+      "bleu_score": 0.1035762985392917
+    },
+    {
+      "model": "multi-qa-mpnet-base-dot-v1",
+      "preprocessing": "char_bounded",
+      "similarity_metric": "euclidean",
+      "response_filtering": true,
+      "bleu_score": 0.100265234245577
+    },
+    {
+      "model": "multi-qa-mpnet-base-dot-v1",
+      "preprocessing": "char_bounded",
+      "similarity_metric": "manhattan",
+      "response_filtering": true,
+      "bleu_score": 0.1009517637704949
+    },
+    {
+      "model": "multi-qa-mpnet-base-dot-v1",
+      "preprocessing": "no_punct",
+      "similarity_metric": "cosine",
+      "response_filtering": true,
+      "bleu_score": 0.10287113064324778
+    },
+    {
+      "model": "multi-qa-mpnet-base-dot-v1",
+      "preprocessing": "no_punct",
+      "similarity_metric": "euclidean",
+      "response_filtering": true,
+      "bleu_score": 0.09821342315826743
+    },
+    {
+      "model": "multi-qa-mpnet-base-dot-v1",
+      "preprocessing": "no_punct",
+      "similarity_metric": "manhattan",
+      "response_filtering": true,
+      "bleu_score": 0.09980803217593084
+    },
+    {
+      "model": "multi-qa-mpnet-base-dot-v1",
+      "preprocessing": "simple_tokens",
+      "similarity_metric": "cosine",
+      "response_filtering": true,
+      "bleu_score": 0.10287113064324778
+    },
+    {
+      "model": "multi-qa-mpnet-base-dot-v1",
+      "preprocessing": "simple_tokens",
+      "similarity_metric": "euclidean",
+      "response_filtering": true,
+      "bleu_score": 0.09821342315826743
+    },
+    {
+      "model": "multi-qa-mpnet-base-dot-v1",
+      "preprocessing": "simple_tokens",
+      "similarity_metric": "manhattan",
+      "response_filtering": true,
+      "bleu_score": 0.09980803217593084
     }
   ],
   "best_config": {

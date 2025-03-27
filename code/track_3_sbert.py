@@ -21,16 +21,19 @@ DEV_PROMPTS_FILE = os.path.join(DATA_DIR, "dev_prompts.csv")
 DEV_RESPONSES_FILE = os.path.join(DATA_DIR, "dev_responses.csv")
 TEST_PROMPTS_FILE = os.path.join(DATA_DIR, "test_prompts.csv")
 
+# Response filtering
+MIN_RESPONSE_LENGTH = 3  # Min number of characters for valid responses
+
 # Model parameters
-#MODEL_NAME = "all-MiniLM-L6-v2"  # 0.10233936335610462
+#MODEL_NAME = "all-MiniLM-L6-v2" # 0.10233936335610462
 MODEL_NAME = "all-mpnet-base-v2" # 0.10786308257756748
 #MODEL_NAME = "paraphrase-mpnet-base-v2" # 0.10241946736959553
 #MODEL_NAME = "all-distilroberta-v1" # 0.1028827366145876
 #MODEL_NAME = "multi-qa-mpnet-base-dot-v1" # 0.10346886872926038
 # Try these more powerful models:
-#MODEL_NAME = "gtr-t5-large"       # 0.10658
-#MODEL_NAME = "gtr-t5-xl"          # 0.10691
-#MODEL_NAME = "multi-qa-mpnet-base-dot-v1"  # 0.10347
+#MODEL_NAME = "gtr-t5-large" # 0.10658
+#MODEL_NAME = "gtr-t5-xl" # 0.10691
+#MODEL_NAME = "multi-qa-mpnet-base-dot-v1" # 0.10347
 # ======================================================
 
 def preprocess_text(text):
@@ -45,19 +48,69 @@ def preprocess_text(text):
     text = re.sub(r'\s+', ' ', text)
     return ' ' + text + ' '
 
-def load_data(use_dev=False):
+def filter_invalid_responses(train_prompts, train_responses):
+    """
+    Filter out training examples where the response is too short or invalid.
+    Returns filtered dataframes.
+    """
+    print(f"Filtering invalid responses (min length: {MIN_RESPONSE_LENGTH} chars)...")
+    
+    # Get valid response IDs
+    valid_response_ids = []
+    invalid_count = 0
+    
+    for _, row in train_responses.iterrows():
+        response = row['model_response']
+        conv_id = row['conversation_id']
+        
+        if pd.isna(response) or len(str(response).strip()) < MIN_RESPONSE_LENGTH:
+            invalid_count += 1
+        else:
+            valid_response_ids.append(conv_id)
+    
+    # Filter prompts to only include those with valid responses
+    filtered_train_prompts = train_prompts[train_prompts['conversation_id'].isin(valid_response_ids)].copy()
+    filtered_train_responses = train_responses[train_responses['conversation_id'].isin(valid_response_ids)].copy()
+    
+    print(f"Filtered out {invalid_count} invalid responses. Remaining: {len(filtered_train_prompts)} examples")
+    
+    return filtered_train_prompts, filtered_train_responses
+
+def load_data(use_dev=False, filter_responses=True):
     """
     Loads candidate and query prompts.
     - For dev evaluation (use_dev=True): use only train as candidate pool, and dev as queries.
     - Otherwise (for test submission): candidate pool = train + dev, query = test prompts.
     """
+    # Load train data and apply filtering if requested
+    train_prompts = pd.read_csv(TRAIN_PROMPTS_FILE)
+    train_responses = pd.read_csv(TRAIN_RESPONSES_FILE)
+    
+    if filter_responses:
+        train_prompts, train_responses = filter_invalid_responses(train_prompts, train_responses)
+    
     if use_dev:
-        candidate_df = pd.read_csv(TRAIN_PROMPTS_FILE)
+        candidate_df = train_prompts
         query_df = pd.read_csv(DEV_PROMPTS_FILE)
     else:
-        train_df = pd.read_csv(TRAIN_PROMPTS_FILE)
-        dev_df = pd.read_csv(DEV_PROMPTS_FILE)
-        candidate_df = pd.concat([train_df, dev_df], ignore_index=True)
+        dev_prompts = pd.read_csv(DEV_PROMPTS_FILE)
+        dev_responses = pd.read_csv(DEV_RESPONSES_FILE)
+        
+        # For test submission, also filter dev prompts if needed
+        if filter_responses:
+            # Get valid dev response IDs
+            valid_dev_ids = []
+            for _, row in dev_responses.iterrows():
+                response = row['model_response']
+                conv_id = row['conversation_id']
+                if not pd.isna(response) and len(str(response).strip()) >= MIN_RESPONSE_LENGTH:
+                    valid_dev_ids.append(conv_id)
+            
+            # Filter dev prompts
+            dev_prompts = dev_prompts[dev_prompts['conversation_id'].isin(valid_dev_ids)].copy()
+            print(f"Using {len(dev_prompts)} valid dev prompts for candidate pool")
+        
+        candidate_df = pd.concat([train_prompts, dev_prompts], ignore_index=True)
         query_df = pd.read_csv(TEST_PROMPTS_FILE)
     
     # Apply preprocessing to user prompts
@@ -169,23 +222,30 @@ def main():
     parser = argparse.ArgumentParser(description="Track 3: Retrieval using Sentence-BERT embeddings")
     parser.add_argument("--use_dev", action="store_true",
                         help="Use the dev set as queries (for evaluation). Otherwise, use test set.")
+    parser.add_argument("--no_filter", action="store_true",
+                        help="Don't filter invalid responses")
     args = parser.parse_args()
     
-    candidate_df, query_df = load_data(use_dev=args.use_dev)
+    filter_responses = not args.no_filter
+    
+    candidate_df, query_df = load_data(use_dev=args.use_dev, filter_responses=filter_responses)
     retrieval_df, best_indices = retrieve_responses(candidate_df, query_df, use_dev=args.use_dev)
     
     # For dev evaluation, calculate BLEU scores
     if args.use_dev:
         avg_bleu, bleu_results_df = calculate_bleu_scores(query_df, candidate_df, best_indices, use_dev=args.use_dev)
-        bleu_output_file = os.path.join(DUMP_DIR, "track_3_sbert_preprocessed_dev_bleu_evaluation.csv")
+        suffix = "_filtered" if filter_responses else ""
+        bleu_output_file = os.path.join(DUMP_DIR, f"track_3_sbert_preprocessed{suffix}_dev_bleu_evaluation.csv")
         bleu_results_df.to_csv(bleu_output_file, index=False)
         print(f"Average BLEU score: {avg_bleu:.5f}")
         print(f"Saved BLEU evaluation to {bleu_output_file}")
     
+    # Save retrieval results
+    suffix = "_filtered" if filter_responses else ""
     if args.use_dev:
-        output_file = os.path.join(DUMP_DIR, "track_3_preprocessed_dev.csv")
+        output_file = os.path.join(DUMP_DIR, f"track_3_preprocessed{suffix}_dev.csv")
     else:
-        output_file = os.path.join(DUMP_DIR, "track_3_preprocessed_test.csv")
+        output_file = os.path.join(DUMP_DIR, f"track_3_preprocessed{suffix}_test.csv")
     
     retrieval_df.to_csv(output_file, index=False)
     print(f"Saved retrieval results to {output_file}")

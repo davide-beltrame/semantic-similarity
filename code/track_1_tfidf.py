@@ -2,9 +2,13 @@ import pandas as pd
 import numpy as np
 import re
 import os
+import argparse
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 from nltk.translate.bleu_score import sentence_bleu, SmoothingFunction
+
+# Response filtering
+MIN_RESPONSE_LENGTH = 3  # Min number of characters for valid responses
 
 def preprocess_text(text):
     """
@@ -18,7 +22,42 @@ def preprocess_text(text):
     text = re.sub(r'\s+', ' ', text)
     return ' ' + text + ' '
 
+def filter_invalid_responses(train_prompts, train_responses):
+    """
+    Filter out training examples where the response is too short or invalid.
+    Returns filtered dataframes.
+    """
+    print(f"Filtering invalid responses (min length: {MIN_RESPONSE_LENGTH} chars)...")
+    
+    # Get valid response IDs
+    valid_response_ids = []
+    invalid_count = 0
+    
+    for _, row in train_responses.iterrows():
+        response = row['model_response']
+        conv_id = row['conversation_id']
+        
+        if pd.isna(response) or len(str(response).strip()) < MIN_RESPONSE_LENGTH:
+            invalid_count += 1
+        else:
+            valid_response_ids.append(conv_id)
+    
+    # Filter prompts to only include those with valid responses
+    filtered_train_prompts = train_prompts[train_prompts['conversation_id'].isin(valid_response_ids)].copy()
+    filtered_train_responses = train_responses[train_responses['conversation_id'].isin(valid_response_ids)].copy()
+    
+    print(f"Filtered out {invalid_count} invalid responses. Remaining: {len(filtered_train_prompts)} examples")
+    
+    return filtered_train_prompts, filtered_train_responses
+
 def main():
+    # Parse command line arguments
+    parser = argparse.ArgumentParser(description="Track 1: TF-IDF Character N-gram with Response Filtering")
+    parser.add_argument("--no_filter", action="store_true", help="Don't filter invalid responses")
+    args = parser.parse_args()
+    
+    filter_responses = not args.no_filter
+    
     # Set up paths relative to this script's location
     code_dir = os.path.dirname(os.path.abspath(__file__))
     data_dir = os.path.join(code_dir, "../data")
@@ -28,20 +67,25 @@ def main():
     # Load development data for evaluation
     df_dev_prompts = pd.read_csv(os.path.join(data_dir, "dev_prompts.csv"))
     df_dev_responses = pd.read_csv(os.path.join(data_dir, "dev_responses.csv"))
+    
     # Load training data for retrieval pool
     df_train_prompts = pd.read_csv(os.path.join(data_dir, "train_prompts.csv"))
     df_train_responses = pd.read_csv(os.path.join(data_dir, "train_responses.csv"))
+    
+    # Apply response filtering if requested
+    if filter_responses:
+        df_train_prompts, df_train_responses = filter_invalid_responses(df_train_prompts, df_train_responses)
     
     # Preprocess the prompts (only for retrieval purposes)
     df_train_prompts['processed'] = df_train_prompts['user_prompt'].apply(preprocess_text)
     df_dev_prompts['processed']   = df_dev_prompts['user_prompt'].apply(preprocess_text)
     
-    # Build TF-IDF vectorizer (enhanced settings)
+    # Build TF-IDF vectorizer with best configuration
     vectorizer = TfidfVectorizer(
         analyzer='char',
-        ngram_range=(2, 5),
+        ngram_range=(2, 4),
         min_df=2,
-        max_df=0.9,
+        max_df=0.8,
         sublinear_tf=True,
         use_idf=True,
         norm='l2',
@@ -85,7 +129,10 @@ def main():
     
     avg_bleu = np.mean(bleu_scores)
     
-    # Dump the detailed results (optional) to a CSV in the dump folder
+    # Create suffix for output files based on filtering
+    suffix = "_filtered" if filter_responses else ""
+    
+    # Dump the detailed results to a CSV in the dump folder
     results_df = pd.DataFrame({
         "dev_conversation_id": df_dev_prompts['conversation_id'],
         "retrieved_train_id": best_train_ids,
@@ -93,7 +140,7 @@ def main():
         "predicted_response": [train_response_map.get(rid, "") for rid in best_train_ids],
         "bleu_score": bleu_scores
     })
-    output_csv = os.path.join(dump_dir, "track_1_dev.csv")
+    output_csv = os.path.join(dump_dir, f"track_1_dev{suffix}.csv")
     results_df.to_csv(output_csv, index=False)
     
     # Print only the average BLEU score
@@ -116,7 +163,7 @@ def main():
         "conversation_id": df_test_prompts['conversation_id'],
         "response_id": test_best_train_ids
     })
-    test_output_csv = os.path.join(dump_dir, "track_1_test.csv")
+    test_output_csv = os.path.join(dump_dir, f"track_1_test{suffix}.csv")
     test_results_df.to_csv(test_output_csv, index=False)
     print(f"Test predictions saved to: {test_output_csv}")
 

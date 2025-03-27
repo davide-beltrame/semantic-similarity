@@ -56,14 +56,21 @@ def train_fasttext_model(texts, model_path="fasttext_model.bin"):
     # Use as many workers as CPU cores
     workers = max(1, multiprocessing.cpu_count() - 1)
     
-    # Train FastText model with best configuration
+    # Train FastText model with best configuration and speed optimizations
     model = FastText(
         tokenized_texts,
         vector_size=300,    # Best config: vector_size=300
         window=3,           # Best config: window_size=3
         min_count=5,        # Best config: min_count=5
         epochs=20,          # Best config: epochs=20
-        workers=workers     # Parallel training threads
+        workers=workers,    # Parallel training threads
+        sg=1,               # Use skip-gram (faster than CBOW for training)
+        negative=5,         # Reduce negative samples (default is 5-10)
+        sample=1e-4,        # Downsampling of frequent words
+        min_n=3,            # Minimum length of char ngrams
+        max_n=6,            # Maximum length of char ngrams
+        bucket=2000000,     # Hash table buckets for character ngrams
+        callbacks=[]        # Disable callbacks to speed up training
     )
     
     print(f"Saving model to {model_path}")
@@ -211,20 +218,23 @@ def main():
     df_dev_prompts['processed'] = df_dev_prompts['user_prompt'].apply(preprocess_text)
     df_test_prompts['processed'] = df_test_prompts['user_prompt'].apply(preprocess_text)
     
-    # Combine all texts for training (train + dev + test prompts)
-    all_texts = pd.concat([
+    # For faster training, use a subset of data for model training
+    # Combine all texts in a more efficient way
+    print("Preparing training corpus...")
+    all_prompts = pd.concat([
         df_train_prompts['processed'],
         df_dev_prompts['processed'], 
         df_test_prompts['processed']
-    ]).tolist()
+    ]).dropna().tolist()
     
-    # Add responses to the training corpus to capture response patterns too
-    all_responses = pd.concat([
-        df_train_responses['model_response'],
-        df_dev_responses['model_response']
+    # Only include a subset of responses to speed up training
+    sample_size = min(10000, len(df_train_responses))  # Cap at 10k responses
+    sampled_responses = pd.concat([
+        df_train_responses['model_response'].sample(sample_size, random_state=42),
+        df_dev_responses['model_response'].sample(min(1000, len(df_dev_responses)), random_state=42)
     ]).dropna().apply(preprocess_text).tolist()
     
-    all_texts.extend(all_responses)
+    all_texts = all_prompts + sampled_responses
     
     # Check if model exists, train if not
     if os.path.exists(fasttext_model_path):
@@ -234,15 +244,44 @@ def main():
         print("Training new FastText model...")
         fasttext_model = train_fasttext_model(all_texts, fasttext_model_path)
     
-    # Calculate TF-IDF weights for all texts
-    word_tfidf, _ = get_tfidf_weights(all_texts)
+    # Calculate TF-IDF weights more efficiently by using a lower max_features
+    print("Calculating TF-IDF weights (optimized)...")
+    tfidf_vectorizer = TfidfVectorizer(
+        tokenizer=simple_tokenize,
+        lowercase=True,
+        use_idf=True,
+        norm='l2',
+        smooth_idf=True,
+        max_features=50000  # Limit vocabulary size for speed
+    )
     
-    # Generate embeddings with TF-IDF weighting (per best configuration)
+    # Fit vectorizer to get IDF values
+    tfidf_vectorizer.fit(all_texts)
+    
+    # Get the vocabulary and idf values
+    vocabulary = tfidf_vectorizer.vocabulary_
+    idf_values = tfidf_vectorizer.idf_
+    
+    # Create a word -> tfidf weight dictionary
+    word_tfidf = {word: idf_values[vocabulary[word]] for word in vocabulary}
+    
+    # Generate embeddings more efficiently using batching
     print("Generating TF-IDF weighted embeddings for training prompts...")
-    train_embeddings = np.array([
-        get_sentence_embedding_tfidf_weighted(fasttext_model, text, word_tfidf) 
-        for text in tqdm(df_train_prompts['processed'])
-    ])
+    
+    # Process in smaller batches to reduce memory usage
+    batch_size = 1000
+    train_embeddings = []
+    
+    for i in tqdm(range(0, len(df_train_prompts), batch_size)):
+        batch = df_train_prompts['processed'][i:i+batch_size]
+        batch_embeddings = np.array([
+            get_sentence_embedding_tfidf_weighted(fasttext_model, text, word_tfidf) 
+            for text in batch
+        ])
+        train_embeddings.append(batch_embeddings)
+    
+    # Combine batches
+    train_embeddings = np.vstack(train_embeddings)
     
     print("Generating TF-IDF weighted embeddings for dev prompts...")
     dev_embeddings = np.array([
@@ -294,12 +333,20 @@ def main():
     output_csv = os.path.join(dump_dir, "dev_bleu_evaluation_fasttext.csv")
     results_df.to_csv(output_csv, index=False)
     
-    # Process test set
+    # Process test set in batches
     print("Generating TF-IDF weighted embeddings for test prompts...")
-    test_embeddings = np.array([
-        get_sentence_embedding_tfidf_weighted(fasttext_model, text, word_tfidf) 
-        for text in tqdm(df_test_prompts['processed'])
-    ])
+    test_embeddings = []
+    
+    for i in tqdm(range(0, len(df_test_prompts), batch_size)):
+        batch = df_test_prompts['processed'][i:i+batch_size]
+        batch_embeddings = np.array([
+            get_sentence_embedding_tfidf_weighted(fasttext_model, text, word_tfidf) 
+            for text in batch
+        ])
+        test_embeddings.append(batch_embeddings)
+    
+    # Combine batches
+    test_embeddings = np.vstack(test_embeddings)
     
     print("Computing test similarities...")
     test_similarity_matrix = cosine_similarity(test_embeddings, train_embeddings)

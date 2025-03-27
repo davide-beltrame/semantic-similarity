@@ -1,0 +1,6664 @@
+{
+  "results": [
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.053899888538343134
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.05123892409748871
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.05389023642453185
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.05123892409748871
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.05402165417640401
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.05130881261651397
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06345658477404545
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.06200336475770473
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06346326613347635
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.06200336475770473
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06278630652486947
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.061577681809361844
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06890324486155236
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.0716327680415957
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06890324486155236
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.07160160699257274
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06894824349222677
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.07189682859297053
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.055178665216702984
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.05239380713058206
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.05518209950956957
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.05239310168643775
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.05488398979265732
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.052453615001839884
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.0644057983886122
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.06384362027077192
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.0644124797480431
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.06384362027077192
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06416985555695935
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.06344865910262523
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.07049734339385838
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.07287522422510187
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.07049734339385838
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.07287522422510187
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.07044107879083263
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.07318836091308135
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.052739665160501
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.051445474292271864
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.05265065843968959
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.051445474292271864
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.05292209276295662
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.05126972400121184
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06212369795352396
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.06158926527901897
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06212284286915214
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.06158926527901897
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06226056495423072
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.061943356965332395
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.07031642797620764
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.07218443445511045
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.07031999984346941
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.07217775309567956
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06982517243797916
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.07162762393751594
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.05367475039233052
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.05227853522180422
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.053670491286847394
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.05228320537685228
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.053886220569590776
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.0524181937329294
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06362417074094397
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.06314159029912055
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06363085210037486
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.06314362545935426
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06359249492596748
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.06308821786676123
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.07092059944102097
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.07410114839980116
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.07092059944102097
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.0740766687102091
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.07077828584320157
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.07372543817847092
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.05262911615221335
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.05104056954082533
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.05259299189662647
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.05104056954082533
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.0524417600384593
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.050767562422995204
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06331231606175725
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.06112131106244006
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06331088267031576
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.06112131106244006
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06320847757291627
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.06134078992606745
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.07035290624760406
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.0726162805197837
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.0703769457120226
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.07261711195532922
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06979139001538685
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.07234252268553133
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.053603831824214264
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.0519194542730379
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.053685166985969805
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.0519194542730379
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.05373955076599626
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.05195789667990702
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06479574096722897
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.06282296820913455
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.0648256042592842
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.06282296820913455
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06519792274082208
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.06258233333591556
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.07136544263620967
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.07426725422532938
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.07136544263620967
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.07425790047876332
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.07133505819301493
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 100,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.07396794082365069
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.05374534650027423
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.05012585510246055
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.053746927021784685
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.05012585510246055
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.05383739034584461
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.04995622941675831
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06288006072716659
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.061102561729392185
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.0628761596834948
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.061102561729392185
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06282869896637458
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.06135370451456962
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.0691401211301638
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.07146485229708714
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.0691401211301638
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.07146485229708714
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06934101459306578
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.07111390513864926
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.053617091693690645
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.051085062931007376
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.053576581986714236
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.05108961289017388
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.05342479587324822
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.05130246330898631
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06369743610670058
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.06185805760002806
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06370406393602968
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.06185805760002806
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06356949517998214
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.06193061198415851
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.07009761410079056
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.07360059848038564
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.07011793786315862
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.07359391712095473
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.07025615322783323
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.07336936070539174
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.053027017260347774
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.05069789273259643
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.05300878559427861
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.05069789273259643
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.052544292905523204
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.05045170486671731
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06248248648389608
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.06092262927105185
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06247410335468285
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.06092262927105185
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06225675480046214
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.06068397802609709
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.07035932729948711
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.07186337539439258
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.07037286524618132
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.07186337539439258
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.0702532913197838
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.0723671223742923
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.05384059132750409
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.051229351172691305
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.0538399687654326
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.051229351172691305
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.05375969336825885
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.05150211913189086
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06330506690528352
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.06215898514909121
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06330506690528352
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.06215898514909121
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.0634962898301657
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.06207938259537209
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.07093867057423991
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.07404325445300183
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.07093867057423991
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.07404325445300183
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.07070569731792607
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.07416629207489332
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.05234724768146465
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.05025857470640487
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.05243840495232819
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.05025857470640487
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.05246581829616453
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.05046915890532103
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06389869367778074
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.06190686230492273
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.0638931823947941
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.06190686230492273
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.0633353294231587
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.06178614149388781
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.07001339735012631
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.0731896204328716
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.0700287282049487
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.07319630179230249
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.070652374412544
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.07338614407956799
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.051532114276328096
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.0505105865856381
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.05148847840432518
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.050498792424674914
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.05164682634174116
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.050840580904738294
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06425713004728133
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.061922372158515544
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06426381140671222
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.061929053517946434
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06396472467162914
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.062104765004814294
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.07132907427113071
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.07354704925190216
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.07132907427113071
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.07355055307458282
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.0712861068126346
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 200,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.07397908957909538
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.053647203179117676
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.05051660709672111
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.05363070211440562
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.050517512109059366
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.0532377020537804
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.050586193313759756
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06225159352783287
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.05997619303979895
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06225159352783287
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.05997619303979895
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06174591755156051
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.06014659121029424
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06932642929675797
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.07198978082868478
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.0693295387889271
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.07201426051827685
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.0688850783873691
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.07236027587632057
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.05338432598630966
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.050601935814795385
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.05341990282898883
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.050601935814795385
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.053235570779180605
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.0510789524964609
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06316323231530994
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.062179089528458346
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06315966044804816
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.062179089528458346
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06306207656020117
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.06211159277124614
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.07074554045208915
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.07475019900726997
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.07076265026604513
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.07475019900726997
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.07021926792340755
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.07426439134825255
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.05196486011146092
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.050103616463274
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.051979766082452486
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.050105651623507705
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.05246118250006316
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.05009199374045016
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.061869421440103246
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.06033205760999185
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.061862507048490535
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.060330022449758144
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06226987822957822
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.06018583598680421
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.0694820601981683
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.07200291401931777
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06949888013785567
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.07200959537874867
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06958384456364486
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.07236879813225734
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.05226933216268658
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.05035175519119404
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.05224245302785897
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.05034853194026748
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.05219066750914185
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.05026295206861249
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06379728941203783
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.061645795583805445
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06379728941203783
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.061645795583805445
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06362382984298932
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.0613471725417578
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.0707158939463849
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.0735779678063911
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.0707158939463849
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.0735779678063911
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.0708870049721969
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.07330264496626808
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.05145736801382477
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.05052874761453503
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.0515160150750242
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.05052874761453503
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.05174933505307461
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.05043760811498039
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06273362421550464
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.06073577181815054
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06271547441696963
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.06073577181815054
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06282998224768037
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.060562138673340996
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.07045664157271428
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.07226297683178222
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.07045664157271428
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.07226297683178222
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.07018683453041644
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.07187336060473076
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.05200827916004826
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.05049379064986292
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.05187745287819241
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.05049379064986292
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.05181075353650692
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.05040660578083843
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06425722078753124
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.06170922202491617
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06424959127096709
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.06170922202491617
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06398603353293689
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.06210713563544513
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.07115925979437555
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.07326670466107803
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.07116594115380645
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.07326670466107803
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.0708845096302892
+    },
+    {
+      "embedding_method": "fasttext",
+      "vector_size": 300,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.07334089556460062
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.05890091895109401
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.05641924380730675
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.05890091895109401
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.056448992726230746
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.05877089048111622
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.05644414462501859
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06610493149901722
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.06529224238455185
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06610493149901722
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.06529224238455185
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06621497066952568
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.06540437696706064
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.07213140304123408
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.07189609085302398
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.07213490686391476
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.07183279705954292
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.07109328882498621
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.07170657636557512
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.05957381386801371
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.05592451507240071
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.05957381386801371
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.055861761841653444
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.05951649364588157
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.05602695635042087
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06706736454614154
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.06417374209517504
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06706736454614154
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.06425179557513237
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06731694123543955
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.06408933190220557
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.07285432128298017
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.07046367749241153
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.0728511073345681
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.07064944853584171
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.07287331598466042
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.07043062994799143
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.058593712149337354
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.0565426274938668
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.058593712149337354
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.05655079075995561
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.05860587094503618
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.05655892942365308
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06649483207075044
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.06516888534397947
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06649483207075044
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.06517584044656437
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06636645022982718
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.06516085063024289
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.0721260151287632
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.07272794489709507
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.0721260151287632
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.0727269750906466
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.072923543598825
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.07247825761562234
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.05902549419000818
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.056808529421573085
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.05902549419000818
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.05678341489707832
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.059403145929955145
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.05659228976020467
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06762323599728
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.06501564538507863
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06761973217459934
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.06507128758759906
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06759453855730828
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.06508727062929465
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.07320375189892236
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.07156088765256799
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.07320375189892236
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.071554956620022
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.0732588315837073
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.07080885720894907
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.057937269588413436
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.055386901886263606
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.057937269588413436
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.0553812162586476
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.05781290655909443
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.05513852041604893
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06694762717991741
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.06537651549351385
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06694762717991741
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.06535417340818235
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06674774483711567
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.06504306359722696
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.07289656397468665
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.07298721285582092
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.07289656397468665
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.07297563772316028
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.07253703037127128
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.07277759456032393
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.0587662344622093
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.055128178696461444
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.0587662344622093
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.055097501668188775
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.058438796206673416
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.055119713976316646
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06753866389442993
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.06472579165307078
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06753866389442993
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.06471138925237413
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06811984745881311
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.06473853001508058
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.0745580392707328
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.07168586683281081
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.07455482532232074
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.07168263989353398
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.07365046837442521
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 100,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.0712139591245047
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.057946624382015685
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.05558719727780248
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.057946624382015685
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.05557699410076361
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.05761784688486584
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.0555719238285262
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.0653103616461151
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.06360296839901267
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.0653103616461151
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.06360626357045879
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06513018140677178
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.06341743731473835
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.07188061605018917
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.07174755882427504
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.07188061605018917
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.07171819739117694
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.07179094126995206
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.07144795715868524
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.05885825068080168
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.05395523647736737
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.05885825068080168
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.05395628880476081
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.05886610528606975
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.05384191928487902
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06643988945539807
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.063592102147852
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06643988945539807
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.06359949051136844
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06640422488926666
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.06379446738434795
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.07306910186723233
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.07089544104478232
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.07306784218651527
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.07087467796108333
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.07314733998248951
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.07116635333045272
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.05745015713526419
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.055108292073477984
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.05745015713526419
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.05510760102130366
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.057632191180930326
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.05532851812973127
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06632438300616326
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.06516499540185836
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06632438300616326
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.06511511267223233
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06624190778486558
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.06517259146047713
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.07211218998817776
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.07204180827181558
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.07211218998817776
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.07206104618597468
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.07212003804762761
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.07194035896191402
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.05909180173575815
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.05449894409300318
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.05909180173575815
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.05446845820693286
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.058614050244262104
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.05493284280354044
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06570597761939559
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.06370824077192351
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06572308743335156
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.06373842146715374
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06638426611821265
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.06340631606310411
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.07308840542036908
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.07072470969716783
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.07309190924304976
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.07085176069670486
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.07327311167185789
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.07066512019137743
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.057798021729997984
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.055286487136006236
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.057798021729997984
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.05527096388232733
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.05777317102645028
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.05534123874105728
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06674896239627698
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.06462461428276706
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06674896239627698
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.0646335155320681
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06661582331589809
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.06453607201386206
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.07271519654385111
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.07263778455303671
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.07271616635029957
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.07262883639774348
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.07276942921775004
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.07268564727074465
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.057616806231144395
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.05366983337627711
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.057616806231144395
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.053654990806280924
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.0577040297202331
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.053648437377705534
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06720379289315818
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.06389549370863494
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06720729671583886
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.06390629895293423
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06722786848685218
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.06373292222956836
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.07370981186153971
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.07136882633808507
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.07372692167549569
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.07131710427297731
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.07335041628869009
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 200,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.07144930054305139
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.05721701134029422
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.054284931710238266
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.05721701134029422
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.05428168216487869
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.05720366997611127
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.05393406867729372
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06592932236235578
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.06425807853811327
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06592932236235578
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.06424096872415729
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06586395060236032
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.0640623181107702
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.07158885025358709
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.07186042960756561
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.07158885025358709
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.0718602925070368
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.07146341517908207
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.07181885416513338
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.058089360196943156
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.05493277317446748
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.058089360196943156
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.054921181307041045
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.05780283902139038
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.0549377849221883
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06603168287259512
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.06279371448410181
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06603168287259512
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.06280350293515055
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06584454655493878
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.06302194279573091
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.07205890902014339
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.07093328740336412
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.07205890902014339
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.07092677535812275
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.07197746109120541
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.07071646693668772
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.05730854576494606
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.05499912904306501
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.05730854576494606
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.05501200162799753
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.057305706072977226
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.05512776683877434
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06571101626587474
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.06394886404448547
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06571101626587474
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.06397456539149027
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06566842061251657
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.06414583775439386
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.07241991748671583
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.07212681011824536
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.07241991748671583
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.07212806979896243
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.07225740049693946
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 5,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.071763771707142
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.05695837378307649
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.05421983606802249
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.05695837378307649
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.054249288846428864
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.0569572497332611
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.05416947682267203
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06655822119845652
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.06311234412288905
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06655822119845652
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.06307088784796706
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.0665664160103584
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.06308732799116602
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.07276759718287144
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.07097604562902993
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.07276759718287144
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.0710070309622472
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.07298792036125379
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 5,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.07090502784064169
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.057393877484543485
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.0547532710932373
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.057393877484543485
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.05474406233763135
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.05754520480830886
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.055030675268867506
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.0656915278395226
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.06405516618800834
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.0656915278395226
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.06405690104603151
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06504782230769297
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.06393202185958828
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.07311316715760768
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.07217118218278248
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.0731142981115513
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.07217317328525637
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.0728509132909105
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 10,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.07243482941793836
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.056877405179214885
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.054292711329869806
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.056877405179214885
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.05425117014144496
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.05730462276346183
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.05387318796929843
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06623822858704828
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.06356872655895901
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06623822858704828
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.06353577008293014
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.06619714873491465
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.06373091178069307
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "cosine",
+      "aggregation_method": "mean",
+      "bleu_score": 0.0733797538742946
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "cosine",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.07125133188727673
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "mean",
+      "bleu_score": 0.0733797538742946
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.07129341850652901
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "mean",
+      "bleu_score": 0.0735232802481342
+    },
+    {
+      "embedding_method": "word2vec",
+      "vector_size": 300,
+      "window_size": 10,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "tfidf_weighted",
+      "bleu_score": 0.07107160110475678
+    },
+    {
+      "embedding_method": "doc2vec",
+      "vector_size": 100,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "cosine",
+      "aggregation_method": "none",
+      "bleu_score": 0.04048998881205784
+    },
+    {
+      "embedding_method": "doc2vec",
+      "vector_size": 100,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "none",
+      "bleu_score": 0.04049436197514141
+    },
+    {
+      "embedding_method": "doc2vec",
+      "vector_size": 100,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 5,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "none",
+      "bleu_score": 0.04021142386689056
+    },
+    {
+      "embedding_method": "doc2vec",
+      "vector_size": 100,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "cosine",
+      "aggregation_method": "none",
+      "bleu_score": 0.051782718749483
+    },
+    {
+      "embedding_method": "doc2vec",
+      "vector_size": 100,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "none",
+      "bleu_score": 0.05186509667960933
+    },
+    {
+      "embedding_method": "doc2vec",
+      "vector_size": 100,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 10,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "none",
+      "bleu_score": 0.05172527019533408
+    },
+    {
+      "embedding_method": "doc2vec",
+      "vector_size": 100,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "cosine",
+      "aggregation_method": "none",
+      "bleu_score": 0.06077073749815361
+    },
+    {
+      "embedding_method": "doc2vec",
+      "vector_size": 100,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "none",
+      "bleu_score": 0.05890396949390827
+    },
+    {
+      "embedding_method": "doc2vec",
+      "vector_size": 100,
+      "window_size": 3,
+      "min_count": 2,
+      "epochs": 20,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "none",
+      "bleu_score": 0.05924270197349026
+    },
+    {
+      "embedding_method": "doc2vec",
+      "vector_size": 100,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "cosine",
+      "aggregation_method": "none",
+      "bleu_score": 0.0399479773963477
+    },
+    {
+      "embedding_method": "doc2vec",
+      "vector_size": 100,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "none",
+      "bleu_score": 0.040833003940621296
+    },
+    {
+      "embedding_method": "doc2vec",
+      "vector_size": 100,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 5,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "none",
+      "bleu_score": 0.0411033514576971
+    },
+    {
+      "embedding_method": "doc2vec",
+      "vector_size": 100,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "cosine",
+      "aggregation_method": "none",
+      "bleu_score": 0.0510934995688724
+    },
+    {
+      "embedding_method": "doc2vec",
+      "vector_size": 100,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "none",
+      "bleu_score": 0.05069671020588177
+    },
+    {
+      "embedding_method": "doc2vec",
+      "vector_size": 100,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 10,
+      "similarity_metric": "manhattan",
+      "aggregation_method": "none",
+      "bleu_score": 0.05172479795150184
+    },
+    {
+      "embedding_method": "doc2vec",
+      "vector_size": 100,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "cosine",
+      "aggregation_method": "none",
+      "bleu_score": 0.06287252168905784
+    },
+    {
+      "embedding_method": "doc2vec",
+      "vector_size": 100,
+      "window_size": 3,
+      "min_count": 5,
+      "epochs": 20,
+      "similarity_metric": "euclidean",
+      "aggregation_method": "none",
+      "bleu_score": 0.06095097822053479
+    }
+  ],
+  "best_config": {
+    "embedding_method": "fasttext",
+    "vector_size": 300,
+    "window_size": 3,
+    "min_count": 5,
+    "epochs": 20,
+    "similarity_metric": "cosine",
+    "aggregation_method": "tfidf_weighted"
+  },
+  "best_bleu": 0.07475019900726997
+}
