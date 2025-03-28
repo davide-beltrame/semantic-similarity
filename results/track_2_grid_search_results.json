@@ -1,0 +1,1154 @@
+{
+  "results": [
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 8,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.08282769570128182
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 5,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.08281566594365736
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 5,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.08272615897103573
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 5,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.08271045001084831
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 8,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.08262865999597599
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 5,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.08262301534346941
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 3,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.08256525194616351
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 8,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.08241882461782224
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 8,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.08239090346386482
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 3,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.08233897870339724
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 8,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.08232482241298394
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 5,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.08195576453857147
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 3,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.08193179402666952
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 8,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.0819037578092531
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 5,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.08188133753655896
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 8,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.08174571690927408
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 8,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.08154314144988364
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 3,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.08149156454990435
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 8,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.08148908644071975
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 3,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.08139870040397164
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 8,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.08133885649125261
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 3,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.0812443210253589
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 3,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.08121701076819454
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 5,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.08118777190629478
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 8,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.08110836389662404
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 3,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.08103533285088982
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 3,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.08097688972374212
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 5,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.08082663186523567
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 8,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.08079255105700273
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 5,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.08059609260659877
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 5,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.08056790967344649
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 3,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.0804447101142232
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 5,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.08034806747637256
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 3,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.08025521047087326
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 3,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.07989568204992617
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 3,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.07965174598063667
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 5,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.07957569612424961
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 3,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.07929919548257919
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 8,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.07151269726961827
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 8,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.07150600263540867
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 8,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.07113196122317972
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 8,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.07063871784335451
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 8,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.07052156133928383
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 8,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.07048031720004662
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 8,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.07047683365114685
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 5,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.07032860332635646
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 5,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.07029782892751396
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 5,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.07028204575596844
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 8,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.07012793066418842
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 8,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.07012076845681099
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 5,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.06999655100180119
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 5,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.0699635103972734
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 3,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.06989066754761064
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 5,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.06974558305321561
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 5,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.06974392770144375
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 3,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.06962252699493968
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 3,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.06961859487285692
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 8,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.06944777642497538
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 5,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.06940009487381796
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 3,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.0691541798406327
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 5,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.06912806209418798
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 8,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.06905945705605684
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 3,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.0690443517593931
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 3,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.06885399187067258
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 3,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.06873404146712724
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 5,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.06869887510941576
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 8,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.06868875825370621
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 5,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.06866884224188446
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 3,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.06849350706912247
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 5,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.06847286868333206
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 3,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.06843877945096674
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 3,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.0681625199045195
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 3,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.06814114667124636
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 3,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.0680179816874652
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 3,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.06800714666895559
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 3,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.06797890536649638
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 5,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.06093668300891846
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 8,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.06086324731728275
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 3,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.060834648076745
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 3,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.060652096728274624
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 3,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.060454660050452705
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 3,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.060446922044258555
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 5,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.06041252373779525
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 8,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.06036948369698032
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 8,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.060335371480366294
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 8,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.06031517989549812
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 8,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.06027689358191276
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 8,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.06020173107684398
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 3,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.060199994238545676
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 5,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.06009306610461914
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 8,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.060083742117847797
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 3,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.059915937176516845
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 5,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.05979655517291376
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 5,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.0597908020489635
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 5,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.0597877130704102
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 3,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.059728553625893605
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 8,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.059719924418496634
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 8,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.05971261896206417
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 5,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.059644275995562955
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 3,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.059610696749447765
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 3,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.059505602806224044
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 3,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.05948653170234509
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 8,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.05947618147274217
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 8,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.05939720355733931
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 3,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.05938130664844657
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 5,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.059350842569680935
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 8,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.05934011226026114
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 3,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.05929200218634953
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 3,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.05918467298704402
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 5,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.059028057499599246
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 5,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.05897350784489204
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 3,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.05889598929149947
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 5,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.058627457578070426
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 100,
+      "window": 5,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.05855848036723787
+    }
+  ],
+  "best_config": {
+    "model_type": "fasttext",
+    "vector_size": 100,
+    "window": 8,
+    "min_count": 5,
+    "epochs": 20,
+    "embedding_method": "weighted",
+    "remove_punct": true
+  },
+  "best_bleu": 0.08282769570128182
+}

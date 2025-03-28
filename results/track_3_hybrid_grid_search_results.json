@@ -1,0 +1,446 @@
+{
+  "results": [
+    {
+      "components": [
+        "transformer"
+      ],
+      "weights": [
+        1.0
+      ],
+      "tfidf_config": {
+        "analyzer": "char",
+        "ngram_range": [
+          2,
+          4
+        ],
+        "min_df": 2,
+        "max_df": 0.8,
+        "sublinear_tf": true,
+        "use_idf": true,
+        "norm": "l2",
+        "max_features": 100000
+      },
+      "fasttext_config": {
+        "vector_size": 300,
+        "window": 5,
+        "min_count": 3,
+        "epochs": 20
+      },
+      "preprocessing": "standard",
+      "bleu_score": 0.10802141026594209
+    },
+    {
+      "components": [
+        "transformer"
+      ],
+      "weights": [
+        1.0
+      ],
+      "tfidf_config": {
+        "analyzer": "char",
+        "ngram_range": [
+          2,
+          4
+        ],
+        "min_df": 2,
+        "max_df": 0.8,
+        "sublinear_tf": true,
+        "use_idf": true,
+        "norm": "l2",
+        "max_features": 100000
+      },
+      "fasttext_config": {
+        "vector_size": 300,
+        "window": 5,
+        "min_count": 3,
+        "epochs": 20
+      },
+      "preprocessing": "with_boundaries",
+      "bleu_score": 0.10802141026594209
+    },
+    {
+      "components": [
+        "transformer"
+      ],
+      "weights": [
+        1.0
+      ],
+      "tfidf_config": {
+        "analyzer": "char",
+        "ngram_range": [
+          2,
+          5
+        ],
+        "min_df": 2,
+        "max_df": 0.8,
+        "sublinear_tf": true,
+        "use_idf": true,
+        "norm": "l2",
+        "max_features": 100000
+      },
+      "fasttext_config": {
+        "vector_size": 300,
+        "window": 5,
+        "min_count": 3,
+        "epochs": 20
+      },
+      "preprocessing": "standard",
+      "bleu_score": 0.10802141026594209
+    },
+    {
+      "components": [
+        "transformer"
+      ],
+      "weights": [
+        1.0
+      ],
+      "tfidf_config": {
+        "analyzer": "char",
+        "ngram_range": [
+          2,
+          5
+        ],
+        "min_df": 2,
+        "max_df": 0.8,
+        "sublinear_tf": true,
+        "use_idf": true,
+        "norm": "l2",
+        "max_features": 100000
+      },
+      "fasttext_config": {
+        "vector_size": 300,
+        "window": 5,
+        "min_count": 3,
+        "epochs": 20
+      },
+      "preprocessing": "with_boundaries",
+      "bleu_score": 0.10802141026594209
+    },
+    {
+      "components": [
+        "tfidf",
+        "fasttext",
+        "transformer"
+      ],
+      "weights": [
+        0.4,
+        0.2,
+        0.4
+      ],
+      "tfidf_config": {
+        "analyzer": "char",
+        "ngram_range": [
+          2,
+          5
+        ],
+        "min_df": 2,
+        "max_df": 0.8,
+        "sublinear_tf": true,
+        "use_idf": true,
+        "norm": "l2",
+        "max_features": 100000
+      },
+      "fasttext_config": {
+        "vector_size": 300,
+        "window": 5,
+        "min_count": 3,
+        "epochs": 20
+      },
+      "preprocessing": "standard",
+      "bleu_score": 0.10679314259077814
+    },
+    {
+      "components": [
+        "tfidf",
+        "fasttext",
+        "transformer"
+      ],
+      "weights": [
+        0.4,
+        0.2,
+        0.4
+      ],
+      "tfidf_config": {
+        "analyzer": "char",
+        "ngram_range": [
+          2,
+          5
+        ],
+        "min_df": 2,
+        "max_df": 0.8,
+        "sublinear_tf": true,
+        "use_idf": true,
+        "norm": "l2",
+        "max_features": 100000
+      },
+      "fasttext_config": {
+        "vector_size": 300,
+        "window": 5,
+        "min_count": 3,
+        "epochs": 20
+      },
+      "preprocessing": "with_boundaries",
+      "bleu_score": 0.10676646690711036
+    },
+    {
+      "components": [
+        "tfidf",
+        "fasttext",
+        "transformer"
+      ],
+      "weights": [
+        0.4,
+        0.2,
+        0.4
+      ],
+      "tfidf_config": {
+        "analyzer": "char",
+        "ngram_range": [
+          2,
+          4
+        ],
+        "min_df": 2,
+        "max_df": 0.8,
+        "sublinear_tf": true,
+        "use_idf": true,
+        "norm": "l2",
+        "max_features": 100000
+      },
+      "fasttext_config": {
+        "vector_size": 300,
+        "window": 5,
+        "min_count": 3,
+        "epochs": 20
+      },
+      "preprocessing": "with_boundaries",
+      "bleu_score": 0.10648920893145773
+    },
+    {
+      "components": [
+        "tfidf",
+        "fasttext",
+        "transformer"
+      ],
+      "weights": [
+        0.4,
+        0.2,
+        0.4
+      ],
+      "tfidf_config": {
+        "analyzer": "char",
+        "ngram_range": [
+          2,
+          4
+        ],
+        "min_df": 2,
+        "max_df": 0.8,
+        "sublinear_tf": true,
+        "use_idf": true,
+        "norm": "l2",
+        "max_features": 100000
+      },
+      "fasttext_config": {
+        "vector_size": 300,
+        "window": 5,
+        "min_count": 3,
+        "epochs": 20
+      },
+      "preprocessing": "standard",
+      "bleu_score": 0.10626814422463303
+    },
+    {
+      "components": [
+        "tfidf",
+        "fasttext",
+        "transformer"
+      ],
+      "weights": [
+        0.3,
+        0.3,
+        0.4
+      ],
+      "tfidf_config": {
+        "analyzer": "char",
+        "ngram_range": [
+          2,
+          4
+        ],
+        "min_df": 2,
+        "max_df": 0.8,
+        "sublinear_tf": true,
+        "use_idf": true,
+        "norm": "l2",
+        "max_features": 100000
+      },
+      "fasttext_config": {
+        "vector_size": 300,
+        "window": 5,
+        "min_count": 3,
+        "epochs": 20
+      },
+      "preprocessing": "with_boundaries",
+      "bleu_score": 0.10619111262539783
+    },
+    {
+      "components": [
+        "tfidf",
+        "fasttext",
+        "transformer"
+      ],
+      "weights": [
+        0.3,
+        0.3,
+        0.4
+      ],
+      "tfidf_config": {
+        "analyzer": "char",
+        "ngram_range": [
+          2,
+          4
+        ],
+        "min_df": 2,
+        "max_df": 0.8,
+        "sublinear_tf": true,
+        "use_idf": true,
+        "norm": "l2",
+        "max_features": 100000
+      },
+      "fasttext_config": {
+        "vector_size": 300,
+        "window": 5,
+        "min_count": 3,
+        "epochs": 20
+      },
+      "preprocessing": "standard",
+      "bleu_score": 0.10585789969818775
+    },
+    {
+      "components": [
+        "tfidf",
+        "fasttext",
+        "transformer"
+      ],
+      "weights": [
+        0.3,
+        0.3,
+        0.4
+      ],
+      "tfidf_config": {
+        "analyzer": "char",
+        "ngram_range": [
+          2,
+          5
+        ],
+        "min_df": 2,
+        "max_df": 0.8,
+        "sublinear_tf": true,
+        "use_idf": true,
+        "norm": "l2",
+        "max_features": 100000
+      },
+      "fasttext_config": {
+        "vector_size": 300,
+        "window": 5,
+        "min_count": 3,
+        "epochs": 20
+      },
+      "preprocessing": "with_boundaries",
+      "bleu_score": 0.10584330948920938
+    },
+    {
+      "components": [
+        "tfidf",
+        "fasttext",
+        "transformer"
+      ],
+      "weights": [
+        0.3,
+        0.3,
+        0.4
+      ],
+      "tfidf_config": {
+        "analyzer": "char",
+        "ngram_range": [
+          2,
+          5
+        ],
+        "min_df": 2,
+        "max_df": 0.8,
+        "sublinear_tf": true,
+        "use_idf": true,
+        "norm": "l2",
+        "max_features": 100000
+      },
+      "fasttext_config": {
+        "vector_size": 300,
+        "window": 5,
+        "min_count": 3,
+        "epochs": 20
+      },
+      "preprocessing": "standard",
+      "bleu_score": 0.10574606210263254
+    },
+    {
+      "components": [
+        "tfidf",
+        "fasttext",
+        "transformer"
+      ],
+      "weights": [
+        0.2,
+        0.4,
+        0.4
+      ],
+      "tfidf_config": {
+        "analyzer": "char",
+        "ngram_range": [
+          2,
+          4
+        ],
+        "min_df": 2,
+        "max_df": 0.8,
+        "sublinear_tf": true,
+        "use_idf": true,
+        "norm": "l2",
+        "max_features": 100000
+      },
+      "fasttext_config": {
+        "vector_size": 300,
+        "window": 5,
+        "min_count": 3,
+        "epochs": 20
+      },
+      "preprocessing": "standard",
+      "bleu_score": 0.10527678823508117
+    }
+  ],
+  "best_config": {
+    "components": [
+      "transformer"
+    ],
+    "weights": [
+      1.0
+    ],
+    "tfidf_config": {
+      "analyzer": "char",
+      "ngram_range": [
+        2,
+        4
+      ],
+      "min_df": 2,
+      "max_df": 0.8,
+      "sublinear_tf": true,
+      "use_idf": true,
+      "norm": "l2",
+      "max_features": 100000
+    },
+    "fasttext_config": {
+      "vector_size": 300,
+      "window": 5,
+      "min_count": 3,
+      "epochs": 20
+    },
+    "preprocessing": "standard"
+  },
+  "best_bleu": 0.10802141026594209
+}
