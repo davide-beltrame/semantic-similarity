@@ -1,0 +1,31 @@
+{
+  "best_config": {
+    "components": [
+      "transformer"
+    ],
+    "weights": [
+      1.0
+    ],
+    "tfidf_config": {
+      "analyzer": "char",
+      "ngram_range": [
+        2,
+        4
+      ],
+      "min_df": 2,
+      "max_df": 0.8,
+      "sublinear_tf": true,
+      "use_idf": true,
+      "norm": "l2",
+      "max_features": 100000
+    },
+    "fasttext_config": {
+      "vector_size": 300,
+      "window": 5,
+      "min_count": 3,
+      "epochs": 20
+    },
+    "preprocessing": "standard"
+  },
+  "description": "This hybrid configuration was found by grid search to have the highest BLEU score on the dev set."
+}

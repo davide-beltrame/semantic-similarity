@@ -55,6 +55,22 @@
         2,
         4
       ],
+      "min_df": 2,
+      "max_df": 0.7,
+      "preprocessing": "with_boundaries",
+      "sublinear_tf": true,
+      "norm": "l2",
+      "use_idf": true,
+      "svd_dim": null,
+      "bleu_score": 0.09079049139507449
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        2,
+        4
+      ],
       "min_df": 1,
       "max_df": 0.8,
       "preprocessing": "with_boundaries",
@@ -71,6 +87,54 @@
         2,
         4
       ],
+      "min_df": 2,
+      "max_df": 1.0,
+      "preprocessing": "with_boundaries",
+      "sublinear_tf": true,
+      "norm": "l2",
+      "use_idf": true,
+      "svd_dim": null,
+      "bleu_score": 0.09072598970366097
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        2,
+        5
+      ],
+      "min_df": 5,
+      "max_df": 0.8,
+      "preprocessing": "with_boundaries",
+      "sublinear_tf": true,
+      "norm": "l2",
+      "use_idf": true,
+      "svd_dim": null,
+      "bleu_score": 0.09070919135943366
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        2,
+        4
+      ],
+      "min_df": 5,
+      "max_df": 1.0,
+      "preprocessing": "with_boundaries",
+      "sublinear_tf": true,
+      "norm": "l1",
+      "use_idf": true,
+      "svd_dim": null,
+      "bleu_score": 0.09070006816242145
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        2,
+        4
+      ],
       "min_df": 1,
       "max_df": 1.0,
       "preprocessing": "with_boundaries",
@@ -79,6 +143,22 @@
       "use_idf": true,
       "svd_dim": null,
       "bleu_score": 0.09064435003900222
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        2,
+        4
+      ],
+      "min_df": 1,
+      "max_df": 0.9,
+      "preprocessing": "with_boundaries",
+      "sublinear_tf": false,
+      "norm": "l1",
+      "use_idf": true,
+      "svd_dim": null,
+      "bleu_score": 0.09061666108072208
     },
     {
       "vectorizer_type": "tfidf",
@@ -120,6 +200,22 @@
         4
       ],
       "min_df": 1,
+      "max_df": 0.8,
+      "preprocessing": "standard",
+      "sublinear_tf": true,
+      "norm": "l1",
+      "use_idf": true,
+      "svd_dim": null,
+      "bleu_score": 0.09051612610347551
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        2,
+        4
+      ],
+      "min_df": 1,
       "max_df": 1.0,
       "preprocessing": "standard",
       "sublinear_tf": true,
@@ -127,6 +223,86 @@
       "use_idf": true,
       "svd_dim": null,
       "bleu_score": 0.09045402300205115
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        2,
+        5
+      ],
+      "min_df": 5,
+      "max_df": 1.0,
+      "preprocessing": "with_boundaries",
+      "sublinear_tf": false,
+      "norm": "l1",
+      "use_idf": true,
+      "svd_dim": null,
+      "bleu_score": 0.0903771458761978
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        2,
+        4
+      ],
+      "min_df": 2,
+      "max_df": 1.0,
+      "preprocessing": "with_boundaries",
+      "sublinear_tf": false,
+      "norm": "l2",
+      "use_idf": true,
+      "svd_dim": null,
+      "bleu_score": 0.09036480436599653
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        2,
+        5
+      ],
+      "min_df": 2,
+      "max_df": 0.8,
+      "preprocessing": "with_boundaries",
+      "sublinear_tf": false,
+      "norm": "l1",
+      "use_idf": true,
+      "svd_dim": null,
+      "bleu_score": 0.09035923294138477
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        2,
+        5
+      ],
+      "min_df": 3,
+      "max_df": 0.7,
+      "preprocessing": "with_boundaries",
+      "sublinear_tf": true,
+      "norm": "l2",
+      "use_idf": true,
+      "svd_dim": null,
+      "bleu_score": 0.09034511153456104
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        2,
+        3
+      ],
+      "min_df": 1,
+      "max_df": 0.8,
+      "preprocessing": "with_boundaries",
+      "sublinear_tf": true,
+      "norm": "l2",
+      "use_idf": true,
+      "svd_dim": null,
+      "bleu_score": 0.09033494179726852
     },
     {
       "vectorizer_type": "tfidf",
@@ -143,6 +319,38 @@
       "use_idf": true,
       "svd_dim": null,
       "bleu_score": 0.0903093950668423
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        3,
+        5
+      ],
+      "min_df": 2,
+      "max_df": 0.7,
+      "preprocessing": "with_boundaries",
+      "sublinear_tf": true,
+      "norm": "l1",
+      "use_idf": true,
+      "svd_dim": null,
+      "bleu_score": 0.0903093950668423
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        3,
+        5
+      ],
+      "min_df": 2,
+      "max_df": 0.8,
+      "preprocessing": "with_boundaries",
+      "sublinear_tf": false,
+      "norm": "l2",
+      "use_idf": true,
+      "svd_dim": null,
+      "bleu_score": 0.09030212486486842
     },
     {
       "vectorizer_type": "tfidf",
@@ -180,6 +388,22 @@
       "vectorizer_type": "tfidf",
       "analyzer": "char",
       "ngram_range": [
+        2,
+        5
+      ],
+      "min_df": 5,
+      "max_df": 0.7,
+      "preprocessing": "standard",
+      "sublinear_tf": true,
+      "norm": "l2",
+      "use_idf": true,
+      "svd_dim": null,
+      "bleu_score": 0.09027397466133186
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
         3,
         5
       ],
@@ -191,6 +415,70 @@
       "use_idf": true,
       "svd_dim": null,
       "bleu_score": 0.09026285930032879
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        3,
+        5
+      ],
+      "min_df": 1,
+      "max_df": 0.8,
+      "preprocessing": "with_boundaries",
+      "sublinear_tf": false,
+      "norm": "l2",
+      "use_idf": true,
+      "svd_dim": null,
+      "bleu_score": 0.09026285930032879
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        2,
+        3
+      ],
+      "min_df": 2,
+      "max_df": 0.7,
+      "preprocessing": "with_boundaries",
+      "sublinear_tf": true,
+      "norm": "l2",
+      "use_idf": true,
+      "svd_dim": null,
+      "bleu_score": 0.09024958905418423
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        2,
+        4
+      ],
+      "min_df": 5,
+      "max_df": 0.8,
+      "preprocessing": "with_boundaries",
+      "sublinear_tf": false,
+      "norm": "l2",
+      "use_idf": true,
+      "svd_dim": null,
+      "bleu_score": 0.09021545944491777
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        2,
+        4
+      ],
+      "min_df": 2,
+      "max_df": 0.9,
+      "preprocessing": "standard",
+      "sublinear_tf": true,
+      "norm": "l2",
+      "use_idf": true,
+      "svd_dim": null,
+      "bleu_score": 0.09020374600879422
     },
     {
       "vectorizer_type": "tfidf",
@@ -276,6 +564,54 @@
       "vectorizer_type": "tfidf",
       "analyzer": "char",
       "ngram_range": [
+        3,
+        5
+      ],
+      "min_df": 3,
+      "max_df": 0.8,
+      "preprocessing": "with_boundaries",
+      "sublinear_tf": true,
+      "norm": "l1",
+      "use_idf": true,
+      "svd_dim": null,
+      "bleu_score": 0.09015271012424271
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        2,
+        5
+      ],
+      "min_df": 1,
+      "max_df": 0.8,
+      "preprocessing": "standard",
+      "sublinear_tf": false,
+      "norm": "l1",
+      "use_idf": true,
+      "svd_dim": null,
+      "bleu_score": 0.09014151058219387
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        2,
+        5
+      ],
+      "min_df": 2,
+      "max_df": 1.0,
+      "preprocessing": "standard",
+      "sublinear_tf": false,
+      "norm": "l1",
+      "use_idf": true,
+      "svd_dim": null,
+      "bleu_score": 0.09010731858676994
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
         2,
         5
       ],
@@ -303,6 +639,22 @@
       "use_idf": true,
       "svd_dim": null,
       "bleu_score": 0.0900999205445672
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        2,
+        3
+      ],
+      "min_df": 2,
+      "max_df": 0.7,
+      "preprocessing": "standard",
+      "sublinear_tf": true,
+      "norm": "l1",
+      "use_idf": true,
+      "svd_dim": null,
+      "bleu_score": 0.09009158878484132
     },
     {
       "vectorizer_type": "tfidf",
@@ -340,6 +692,22 @@
       "vectorizer_type": "tfidf",
       "analyzer": "char",
       "ngram_range": [
+        2,
+        3
+      ],
+      "min_df": 3,
+      "max_df": 1.0,
+      "preprocessing": "standard",
+      "sublinear_tf": true,
+      "norm": "l2",
+      "use_idf": true,
+      "svd_dim": null,
+      "bleu_score": 0.09008048864778842
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
         1,
         3
       ],
@@ -372,6 +740,70 @@
       "vectorizer_type": "tfidf",
       "analyzer": "char",
       "ngram_range": [
+        1,
+        3
+      ],
+      "min_df": 3,
+      "max_df": 0.7,
+      "preprocessing": "standard",
+      "sublinear_tf": true,
+      "norm": "l1",
+      "use_idf": true,
+      "svd_dim": null,
+      "bleu_score": 0.09004418764652648
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        2,
+        3
+      ],
+      "min_df": 3,
+      "max_df": 0.9,
+      "preprocessing": "with_boundaries",
+      "sublinear_tf": true,
+      "norm": "l2",
+      "use_idf": true,
+      "svd_dim": null,
+      "bleu_score": 0.09002982896871008
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        1,
+        3
+      ],
+      "min_df": 1,
+      "max_df": 0.9,
+      "preprocessing": "with_boundaries",
+      "sublinear_tf": true,
+      "norm": "l2",
+      "use_idf": true,
+      "svd_dim": null,
+      "bleu_score": 0.08999909973279038
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        1,
+        3
+      ],
+      "min_df": 2,
+      "max_df": 0.9,
+      "preprocessing": "standard",
+      "sublinear_tf": true,
+      "norm": "l1",
+      "use_idf": true,
+      "svd_dim": null,
+      "bleu_score": 0.08994108410430829
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
         3,
         5
       ],
@@ -383,6 +815,54 @@
       "use_idf": true,
       "svd_dim": null,
       "bleu_score": 0.08990129445697993
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        3,
+        5
+      ],
+      "min_df": 3,
+      "max_df": 0.8,
+      "preprocessing": "with_boundaries",
+      "sublinear_tf": false,
+      "norm": "l2",
+      "use_idf": true,
+      "svd_dim": null,
+      "bleu_score": 0.08990129445697993
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        2,
+        4
+      ],
+      "min_df": 5,
+      "max_df": 0.9,
+      "preprocessing": "standard",
+      "sublinear_tf": false,
+      "norm": "l2",
+      "use_idf": true,
+      "svd_dim": null,
+      "bleu_score": 0.08989883338820773
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        2,
+        4
+      ],
+      "min_df": 5,
+      "max_df": 0.9,
+      "preprocessing": "standard",
+      "sublinear_tf": false,
+      "norm": "l1",
+      "use_idf": true,
+      "svd_dim": null,
+      "bleu_score": 0.08989883338820773
     },
     {
       "vectorizer_type": "tfidf",
@@ -415,6 +895,102 @@
       "use_idf": true,
       "svd_dim": null,
       "bleu_score": 0.0898883091577339
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        2,
+        4
+      ],
+      "min_df": 3,
+      "max_df": 0.7,
+      "preprocessing": "standard",
+      "sublinear_tf": false,
+      "norm": "l1",
+      "use_idf": true,
+      "svd_dim": null,
+      "bleu_score": 0.08981466509132031
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        3,
+        5
+      ],
+      "min_df": 2,
+      "max_df": 0.8,
+      "preprocessing": "standard",
+      "sublinear_tf": true,
+      "norm": "l2",
+      "use_idf": true,
+      "svd_dim": null,
+      "bleu_score": 0.0897625475666921
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        1,
+        3
+      ],
+      "min_df": 1,
+      "max_df": 1.0,
+      "preprocessing": "with_boundaries",
+      "sublinear_tf": true,
+      "norm": "l2",
+      "use_idf": true,
+      "svd_dim": null,
+      "bleu_score": 0.0897477239576722
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        2,
+        4
+      ],
+      "min_df": 1,
+      "max_df": 0.8,
+      "preprocessing": "standard",
+      "sublinear_tf": true,
+      "norm": "l2",
+      "use_idf": false,
+      "svd_dim": null,
+      "bleu_score": 0.08962246015413575
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        2,
+        4
+      ],
+      "min_df": 1,
+      "max_df": 0.8,
+      "preprocessing": "standard",
+      "sublinear_tf": true,
+      "norm": "l1",
+      "use_idf": false,
+      "svd_dim": null,
+      "bleu_score": 0.08962246015413575
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        1,
+        3
+      ],
+      "min_df": 5,
+      "max_df": 0.8,
+      "preprocessing": "with_boundaries",
+      "sublinear_tf": true,
+      "norm": "l2",
+      "use_idf": true,
+      "svd_dim": null,
+      "bleu_score": 0.08961980066128693
     },
     {
       "vectorizer_type": "tfidf",
@@ -449,6 +1025,22 @@
       "bleu_score": 0.08961741120303637
     },
     {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        3,
+        5
+      ],
+      "min_df": 5,
+      "max_df": 0.7,
+      "preprocessing": "with_boundaries",
+      "sublinear_tf": false,
+      "norm": "l2",
+      "use_idf": true,
+      "svd_dim": null,
+      "bleu_score": 0.08961741120303637
+    },
+    {
       "vectorizer_type": "binary",
       "analyzer": "char",
       "ngram_range": [
@@ -463,6 +1055,34 @@
       "use_idf": true,
       "svd_dim": null,
       "bleu_score": 0.08956837765248364
+    },
+    {
+      "vectorizer_type": "binary",
+      "analyzer": "char",
+      "ngram_range": [
+        2,
+        4
+      ],
+      "min_df": 2,
+      "max_df": 0.8,
+      "preprocessing": "with_boundaries",
+      "norm": null,
+      "svd_dim": null,
+      "bleu_score": 0.08956837765248364
+    },
+    {
+      "vectorizer_type": "binary",
+      "analyzer": "char",
+      "ngram_range": [
+        2,
+        4
+      ],
+      "min_df": 1,
+      "max_df": 1.0,
+      "preprocessing": "with_boundaries",
+      "norm": null,
+      "svd_dim": null,
+      "bleu_score": 0.08952380328655098
     },
     {
       "vectorizer_type": "binary",
@@ -493,6 +1113,38 @@
       "use_idf": true,
       "svd_dim": null,
       "bleu_score": 0.08950215530443068
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        3,
+        5
+      ],
+      "min_df": 3,
+      "max_df": 1.0,
+      "preprocessing": "standard",
+      "sublinear_tf": true,
+      "norm": "l1",
+      "use_idf": true,
+      "svd_dim": null,
+      "bleu_score": 0.08941086419483765
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        3,
+        5
+      ],
+      "min_df": 3,
+      "max_df": 0.9,
+      "preprocessing": "standard",
+      "sublinear_tf": true,
+      "norm": "l2",
+      "use_idf": true,
+      "svd_dim": null,
+      "bleu_score": 0.08941086419483765
     },
     {
       "vectorizer_type": "binary",
@@ -536,6 +1188,22 @@
       "preprocessing": "standard",
       "sublinear_tf": true,
       "norm": "l2",
+      "use_idf": false,
+      "svd_dim": null,
+      "bleu_score": 0.08930645349569327
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        2,
+        4
+      ],
+      "min_df": 1,
+      "max_df": 0.9,
+      "preprocessing": "standard",
+      "sublinear_tf": true,
+      "norm": "l1",
       "use_idf": false,
       "svd_dim": null,
       "bleu_score": 0.08930645349569327
@@ -636,6 +1304,22 @@
       "vectorizer_type": "tfidf",
       "analyzer": "char",
       "ngram_range": [
+        1,
+        3
+      ],
+      "min_df": 1,
+      "max_df": 0.9,
+      "preprocessing": "standard",
+      "sublinear_tf": false,
+      "norm": "l1",
+      "use_idf": true,
+      "svd_dim": null,
+      "bleu_score": 0.08911994309575175
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
         2,
         3
       ],
@@ -668,6 +1352,22 @@
       "vectorizer_type": "tfidf",
       "analyzer": "char",
       "ngram_range": [
+        1,
+        3
+      ],
+      "min_df": 3,
+      "max_df": 0.7,
+      "preprocessing": "standard",
+      "sublinear_tf": false,
+      "norm": "l1",
+      "use_idf": true,
+      "svd_dim": null,
+      "bleu_score": 0.08901508464534326
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
         2,
         5
       ],
@@ -679,6 +1379,22 @@
       "use_idf": false,
       "svd_dim": null,
       "bleu_score": 0.08893864311389425
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        2,
+        4
+      ],
+      "min_df": 5,
+      "max_df": 0.7,
+      "preprocessing": "standard",
+      "sublinear_tf": true,
+      "norm": "l2",
+      "use_idf": false,
+      "svd_dim": null,
+      "bleu_score": 0.08893470074058892
     },
     {
       "vectorizer_type": "binary",
@@ -709,6 +1425,22 @@
       "use_idf": true,
       "svd_dim": null,
       "bleu_score": 0.08892875570056502
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        2,
+        3
+      ],
+      "min_df": 3,
+      "max_df": 0.7,
+      "preprocessing": "standard",
+      "sublinear_tf": false,
+      "norm": "l1",
+      "use_idf": true,
+      "svd_dim": null,
+      "bleu_score": 0.08892006923078837
     },
     {
       "vectorizer_type": "tfidf",
@@ -749,6 +1481,20 @@
         2,
         3
       ],
+      "min_df": 3,
+      "max_df": 1.0,
+      "preprocessing": "with_boundaries",
+      "norm": null,
+      "svd_dim": null,
+      "bleu_score": 0.08887188448514842
+    },
+    {
+      "vectorizer_type": "binary",
+      "analyzer": "char",
+      "ngram_range": [
+        2,
+        3
+      ],
       "min_df": 2,
       "max_df": 0.8,
       "preprocessing": "with_boundaries",
@@ -757,6 +1503,38 @@
       "use_idf": true,
       "svd_dim": null,
       "bleu_score": 0.08886572992148871
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        2,
+        4
+      ],
+      "min_df": 2,
+      "max_df": 1.0,
+      "preprocessing": "with_boundaries",
+      "sublinear_tf": true,
+      "norm": "l2",
+      "use_idf": false,
+      "svd_dim": null,
+      "bleu_score": 0.08885013673524224
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        2,
+        3
+      ],
+      "min_df": 2,
+      "max_df": 0.9,
+      "preprocessing": "standard",
+      "sublinear_tf": false,
+      "norm": "l2",
+      "use_idf": true,
+      "svd_dim": null,
+      "bleu_score": 0.08884936687537474
     },
     {
       "vectorizer_type": "binary",
@@ -773,6 +1551,20 @@
       "bleu_score": 0.08884074929629546
     },
     {
+      "vectorizer_type": "binary",
+      "analyzer": "char",
+      "ngram_range": [
+        1,
+        3
+      ],
+      "min_df": 1,
+      "max_df": 0.8,
+      "preprocessing": "standard",
+      "norm": null,
+      "svd_dim": null,
+      "bleu_score": 0.08883624864250061
+    },
+    {
       "vectorizer_type": "tfidf",
       "analyzer": "char",
       "ngram_range": [
@@ -787,6 +1579,100 @@
       "use_idf": false,
       "svd_dim": null,
       "bleu_score": 0.08882298007149013
+    },
+    {
+      "vectorizer_type": "binary",
+      "analyzer": "char",
+      "ngram_range": [
+        2,
+        3
+      ],
+      "min_df": 1,
+      "max_df": 0.7,
+      "preprocessing": "with_boundaries",
+      "norm": null,
+      "svd_dim": null,
+      "bleu_score": 0.08881954958812739
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        2,
+        4
+      ],
+      "min_df": 3,
+      "max_df": 1.0,
+      "preprocessing": "with_boundaries",
+      "sublinear_tf": true,
+      "norm": "l1",
+      "use_idf": false,
+      "svd_dim": null,
+      "bleu_score": 0.08881782676640117
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        2,
+        4
+      ],
+      "min_df": 2,
+      "max_df": 0.8,
+      "preprocessing": "with_boundaries",
+      "sublinear_tf": true,
+      "norm": "l1",
+      "use_idf": false,
+      "svd_dim": null,
+      "bleu_score": 0.08881103559455751
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        2,
+        4
+      ],
+      "min_df": 2,
+      "max_df": 0.8,
+      "preprocessing": "with_boundaries",
+      "sublinear_tf": true,
+      "norm": "l2",
+      "use_idf": false,
+      "svd_dim": null,
+      "bleu_score": 0.08881103559455751
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        1,
+        3
+      ],
+      "min_df": 2,
+      "max_df": 1.0,
+      "preprocessing": "with_boundaries",
+      "sublinear_tf": false,
+      "norm": "l2",
+      "use_idf": true,
+      "svd_dim": null,
+      "bleu_score": 0.08880167644162613
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        1,
+        3
+      ],
+      "min_df": 2,
+      "max_df": 1.0,
+      "preprocessing": "with_boundaries",
+      "sublinear_tf": false,
+      "norm": "l1",
+      "use_idf": true,
+      "svd_dim": null,
+      "bleu_score": 0.08880167644162613
     },
     {
       "vectorizer_type": "tfidf",
@@ -837,6 +1723,36 @@
       "bleu_score": 0.08874879070956575
     },
     {
+      "vectorizer_type": "binary",
+      "analyzer": "char",
+      "ngram_range": [
+        2,
+        3
+      ],
+      "min_df": 1,
+      "max_df": 1.0,
+      "preprocessing": "standard",
+      "norm": null,
+      "svd_dim": null,
+      "bleu_score": 0.08873875078145925
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        1,
+        3
+      ],
+      "min_df": 5,
+      "max_df": 0.9,
+      "preprocessing": "standard",
+      "sublinear_tf": false,
+      "norm": "l1",
+      "use_idf": true,
+      "svd_dim": null,
+      "bleu_score": 0.08873503815644483
+    },
+    {
       "vectorizer_type": "tfidf",
       "analyzer": "char",
       "ngram_range": [
@@ -848,6 +1764,22 @@
       "preprocessing": "standard",
       "sublinear_tf": false,
       "norm": "l2",
+      "use_idf": true,
+      "svd_dim": null,
+      "bleu_score": 0.08871815752704347
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        1,
+        3
+      ],
+      "min_df": 1,
+      "max_df": 0.8,
+      "preprocessing": "standard",
+      "sublinear_tf": false,
+      "norm": "l1",
       "use_idf": true,
       "svd_dim": null,
       "bleu_score": 0.08871815752704347
@@ -872,6 +1804,22 @@
       "vectorizer_type": "tfidf",
       "analyzer": "char",
       "ngram_range": [
+        1,
+        3
+      ],
+      "min_df": 5,
+      "max_df": 0.8,
+      "preprocessing": "standard",
+      "sublinear_tf": false,
+      "norm": "l1",
+      "use_idf": true,
+      "svd_dim": null,
+      "bleu_score": 0.08869315121697693
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
         2,
         4
       ],
@@ -883,6 +1831,52 @@
       "use_idf": false,
       "svd_dim": null,
       "bleu_score": 0.08868869140195791
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        2,
+        5
+      ],
+      "min_df": 3,
+      "max_df": 0.8,
+      "preprocessing": "standard",
+      "sublinear_tf": true,
+      "norm": "l1",
+      "use_idf": false,
+      "svd_dim": null,
+      "bleu_score": 0.08868201489684668
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        1,
+        3
+      ],
+      "min_df": 3,
+      "max_df": 0.8,
+      "preprocessing": "with_boundaries",
+      "sublinear_tf": false,
+      "norm": "l2",
+      "use_idf": true,
+      "svd_dim": null,
+      "bleu_score": 0.08867351685677204
+    },
+    {
+      "vectorizer_type": "binary",
+      "analyzer": "char",
+      "ngram_range": [
+        1,
+        3
+      ],
+      "min_df": 2,
+      "max_df": 0.9,
+      "preprocessing": "with_boundaries",
+      "norm": null,
+      "svd_dim": null,
+      "bleu_score": 0.08866724214539566
     },
     {
       "vectorizer_type": "tfidf",
@@ -904,6 +1898,38 @@
       "vectorizer_type": "tfidf",
       "analyzer": "char",
       "ngram_range": [
+        3,
+        5
+      ],
+      "min_df": 5,
+      "max_df": 0.8,
+      "preprocessing": "standard",
+      "sublinear_tf": false,
+      "norm": "l1",
+      "use_idf": true,
+      "svd_dim": null,
+      "bleu_score": 0.08863425144234623
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        1,
+        3
+      ],
+      "min_df": 5,
+      "max_df": 0.8,
+      "preprocessing": "standard",
+      "sublinear_tf": true,
+      "norm": "l1",
+      "use_idf": false,
+      "svd_dim": null,
+      "bleu_score": 0.08861129115372272
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
         2,
         5
       ],
@@ -915,6 +1941,20 @@
       "use_idf": false,
       "svd_dim": null,
       "bleu_score": 0.08858923667148838
+    },
+    {
+      "vectorizer_type": "binary",
+      "analyzer": "char",
+      "ngram_range": [
+        1,
+        3
+      ],
+      "min_df": 1,
+      "max_df": 1.0,
+      "preprocessing": "with_boundaries",
+      "norm": null,
+      "svd_dim": null,
+      "bleu_score": 0.08857765496662753
     },
     {
       "vectorizer_type": "tfidf",
@@ -937,6 +1977,22 @@
       "analyzer": "char",
       "ngram_range": [
         2,
+        5
+      ],
+      "min_df": 5,
+      "max_df": 0.9,
+      "preprocessing": "standard",
+      "sublinear_tf": true,
+      "norm": "l1",
+      "use_idf": false,
+      "svd_dim": null,
+      "bleu_score": 0.0885748950836206
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        2,
         3
       ],
       "min_df": 3,
@@ -947,6 +2003,50 @@
       "use_idf": true,
       "svd_dim": null,
       "bleu_score": 0.08857373916242647
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        2,
+        5
+      ],
+      "min_df": 3,
+      "max_df": 0.8,
+      "preprocessing": "standard",
+      "sublinear_tf": false,
+      "norm": "l1",
+      "use_idf": false,
+      "svd_dim": null,
+      "bleu_score": 0.08854815024266496
+    },
+    {
+      "vectorizer_type": "binary",
+      "analyzer": "char",
+      "ngram_range": [
+        3,
+        5
+      ],
+      "min_df": 1,
+      "max_df": 0.7,
+      "preprocessing": "standard",
+      "norm": null,
+      "svd_dim": null,
+      "bleu_score": 0.08847402926655416
+    },
+    {
+      "vectorizer_type": "binary",
+      "analyzer": "char",
+      "ngram_range": [
+        1,
+        3
+      ],
+      "min_df": 1,
+      "max_df": 0.8,
+      "preprocessing": "with_boundaries",
+      "norm": null,
+      "svd_dim": null,
+      "bleu_score": 0.08846045841168335
     },
     {
       "vectorizer_type": "binary",
@@ -1059,6 +2159,22 @@
       "analyzer": "char",
       "ngram_range": [
         2,
+        5
+      ],
+      "min_df": 2,
+      "max_df": 0.9,
+      "preprocessing": "with_boundaries",
+      "sublinear_tf": false,
+      "norm": "l1",
+      "use_idf": false,
+      "svd_dim": null,
+      "bleu_score": 0.08817402107841049
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        2,
         4
       ],
       "min_df": 2,
@@ -1090,6 +2206,70 @@
       "vectorizer_type": "tfidf",
       "analyzer": "char",
       "ngram_range": [
+        1,
+        3
+      ],
+      "min_df": 5,
+      "max_df": 0.9,
+      "preprocessing": "standard",
+      "sublinear_tf": true,
+      "norm": "l1",
+      "use_idf": false,
+      "svd_dim": null,
+      "bleu_score": 0.0881611816953236
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        2,
+        5
+      ],
+      "min_df": 2,
+      "max_df": 0.8,
+      "preprocessing": "with_boundaries",
+      "sublinear_tf": false,
+      "norm": "l1",
+      "use_idf": false,
+      "svd_dim": null,
+      "bleu_score": 0.08815287397870607
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        2,
+        5
+      ],
+      "min_df": 2,
+      "max_df": 0.7,
+      "preprocessing": "standard",
+      "sublinear_tf": false,
+      "norm": "l1",
+      "use_idf": false,
+      "svd_dim": null,
+      "bleu_score": 0.08814596673180497
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        2,
+        5
+      ],
+      "min_df": 2,
+      "max_df": 0.7,
+      "preprocessing": "standard",
+      "sublinear_tf": false,
+      "norm": "l2",
+      "use_idf": false,
+      "svd_dim": null,
+      "bleu_score": 0.0881431600705505
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
         2,
         5
       ],
@@ -1106,6 +2286,118 @@
       "vectorizer_type": "tfidf",
       "analyzer": "char",
       "ngram_range": [
+        2,
+        3
+      ],
+      "min_df": 3,
+      "max_df": 0.8,
+      "preprocessing": "with_boundaries",
+      "sublinear_tf": true,
+      "norm": "l1",
+      "use_idf": false,
+      "svd_dim": null,
+      "bleu_score": 0.08810905475278917
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        2,
+        3
+      ],
+      "min_df": 1,
+      "max_df": 1.0,
+      "preprocessing": "with_boundaries",
+      "sublinear_tf": true,
+      "norm": "l1",
+      "use_idf": false,
+      "svd_dim": null,
+      "bleu_score": 0.08808095577205428
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        3,
+        5
+      ],
+      "min_df": 1,
+      "max_df": 0.7,
+      "preprocessing": "standard",
+      "sublinear_tf": true,
+      "norm": "l1",
+      "use_idf": false,
+      "svd_dim": null,
+      "bleu_score": 0.08806551314767284
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        3,
+        5
+      ],
+      "min_df": 2,
+      "max_df": 1.0,
+      "preprocessing": "standard",
+      "sublinear_tf": true,
+      "norm": "l2",
+      "use_idf": false,
+      "svd_dim": null,
+      "bleu_score": 0.08805760774044265
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        3,
+        5
+      ],
+      "min_df": 2,
+      "max_df": 0.9,
+      "preprocessing": "standard",
+      "sublinear_tf": true,
+      "norm": "l1",
+      "use_idf": false,
+      "svd_dim": null,
+      "bleu_score": 0.08805760774044265
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        3,
+        5
+      ],
+      "min_df": 2,
+      "max_df": 0.7,
+      "preprocessing": "standard",
+      "sublinear_tf": true,
+      "norm": "l2",
+      "use_idf": false,
+      "svd_dim": null,
+      "bleu_score": 0.08805760774044265
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        2,
+        4
+      ],
+      "min_df": 5,
+      "max_df": 0.8,
+      "preprocessing": "standard",
+      "sublinear_tf": false,
+      "norm": "l1",
+      "use_idf": false,
+      "svd_dim": null,
+      "bleu_score": 0.08804394597134958
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
         1,
         3
       ],
@@ -1117,6 +2409,86 @@
       "use_idf": false,
       "svd_dim": null,
       "bleu_score": 0.0880181886242706
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        2,
+        4
+      ],
+      "min_df": 1,
+      "max_df": 1.0,
+      "preprocessing": "standard",
+      "sublinear_tf": false,
+      "norm": "l1",
+      "use_idf": false,
+      "svd_dim": null,
+      "bleu_score": 0.08801471613513055
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        2,
+        4
+      ],
+      "min_df": 1,
+      "max_df": 1.0,
+      "preprocessing": "standard",
+      "sublinear_tf": false,
+      "norm": "l2",
+      "use_idf": false,
+      "svd_dim": null,
+      "bleu_score": 0.08801471613513055
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        2,
+        5
+      ],
+      "min_df": 5,
+      "max_df": 0.7,
+      "preprocessing": "with_boundaries",
+      "sublinear_tf": false,
+      "norm": "l1",
+      "use_idf": false,
+      "svd_dim": null,
+      "bleu_score": 0.08798278274242438
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        1,
+        3
+      ],
+      "min_df": 1,
+      "max_df": 0.7,
+      "preprocessing": "with_boundaries",
+      "sublinear_tf": true,
+      "norm": "l2",
+      "use_idf": false,
+      "svd_dim": null,
+      "bleu_score": 0.08796262254739176
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        2,
+        4
+      ],
+      "min_df": 5,
+      "max_df": 1.0,
+      "preprocessing": "standard",
+      "sublinear_tf": false,
+      "norm": "l2",
+      "use_idf": false,
+      "svd_dim": null,
+      "bleu_score": 0.08796231826975788
     },
     {
       "vectorizer_type": "tfidf",
@@ -1151,6 +2523,34 @@
       "bleu_score": 0.08792419168036844
     },
     {
+      "vectorizer_type": "binary",
+      "analyzer": "char",
+      "ngram_range": [
+        3,
+        5
+      ],
+      "min_df": 3,
+      "max_df": 0.8,
+      "preprocessing": "standard",
+      "norm": null,
+      "svd_dim": null,
+      "bleu_score": 0.08790843050809262
+    },
+    {
+      "vectorizer_type": "binary",
+      "analyzer": "char",
+      "ngram_range": [
+        3,
+        5
+      ],
+      "min_df": 3,
+      "max_df": 1.0,
+      "preprocessing": "standard",
+      "norm": null,
+      "svd_dim": null,
+      "bleu_score": 0.08790843050809262
+    },
+    {
       "vectorizer_type": "tfidf",
       "analyzer": "char",
       "ngram_range": [
@@ -1181,6 +2581,38 @@
       "use_idf": false,
       "svd_dim": null,
       "bleu_score": 0.08785252800172004
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        2,
+        4
+      ],
+      "min_df": 2,
+      "max_df": 0.7,
+      "preprocessing": "with_boundaries",
+      "sublinear_tf": false,
+      "norm": "l1",
+      "use_idf": false,
+      "svd_dim": null,
+      "bleu_score": 0.08785088582484266
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        2,
+        3
+      ],
+      "min_df": 2,
+      "max_df": 1.0,
+      "preprocessing": "with_boundaries",
+      "sublinear_tf": true,
+      "norm": "l2",
+      "use_idf": false,
+      "svd_dim": null,
+      "bleu_score": 0.08781297461142379
     },
     {
       "vectorizer_type": "hashing",
@@ -1221,6 +2653,22 @@
         2,
         3
       ],
+      "min_df": 5,
+      "max_df": 1.0,
+      "preprocessing": "with_boundaries",
+      "sublinear_tf": true,
+      "norm": "l2",
+      "use_idf": false,
+      "svd_dim": null,
+      "bleu_score": 0.08773303048294954
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        2,
+        3
+      ],
       "min_df": 1,
       "max_df": 1.0,
       "preprocessing": "standard",
@@ -1229,6 +2677,22 @@
       "use_idf": false,
       "svd_dim": null,
       "bleu_score": 0.08766634872030236
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        2,
+        3
+      ],
+      "min_df": 2,
+      "max_df": 0.9,
+      "preprocessing": "standard",
+      "sublinear_tf": true,
+      "norm": "l1",
+      "use_idf": false,
+      "svd_dim": null,
+      "bleu_score": 0.08762653668080513
     },
     {
       "vectorizer_type": "tfidf",
@@ -1267,6 +2731,22 @@
       "analyzer": "char",
       "ngram_range": [
         2,
+        3
+      ],
+      "min_df": 3,
+      "max_df": 0.9,
+      "preprocessing": "standard",
+      "sublinear_tf": true,
+      "norm": "l2",
+      "use_idf": false,
+      "svd_dim": null,
+      "bleu_score": 0.08753845331108755
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        2,
         4
       ],
       "min_df": 2,
@@ -1277,6 +2757,22 @@
       "use_idf": false,
       "svd_dim": null,
       "bleu_score": 0.08753769903986985
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        3,
+        5
+      ],
+      "min_df": 2,
+      "max_df": 0.9,
+      "preprocessing": "with_boundaries",
+      "sublinear_tf": false,
+      "norm": "l2",
+      "use_idf": false,
+      "svd_dim": null,
+      "bleu_score": 0.08753460587288
     },
     {
       "vectorizer_type": "tfidf",
@@ -1311,6 +2807,22 @@
       "bleu_score": 0.08749697030690348
     },
     {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        3,
+        5
+      ],
+      "min_df": 3,
+      "max_df": 0.7,
+      "preprocessing": "standard",
+      "sublinear_tf": true,
+      "norm": "l2",
+      "use_idf": false,
+      "svd_dim": null,
+      "bleu_score": 0.08745911297106765
+    },
+    {
       "vectorizer_type": "count",
       "analyzer": "char_wb",
       "ngram_range": [
@@ -1333,6 +2845,54 @@
         3,
         5
       ],
+      "min_df": 1,
+      "max_df": 0.9,
+      "preprocessing": "with_boundaries",
+      "sublinear_tf": false,
+      "norm": "l1",
+      "use_idf": false,
+      "svd_dim": null,
+      "bleu_score": 0.08738418050154087
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        3,
+        5
+      ],
+      "min_df": 1,
+      "max_df": 0.7,
+      "preprocessing": "with_boundaries",
+      "sublinear_tf": true,
+      "norm": "l2",
+      "use_idf": false,
+      "svd_dim": null,
+      "bleu_score": 0.08735593315290645
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        3,
+        5
+      ],
+      "min_df": 3,
+      "max_df": 0.9,
+      "preprocessing": "with_boundaries",
+      "sublinear_tf": false,
+      "norm": "l2",
+      "use_idf": false,
+      "svd_dim": null,
+      "bleu_score": 0.08698290064826429
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        3,
+        5
+      ],
       "min_df": 3,
       "max_df": 0.9,
       "preprocessing": "standard",
@@ -1341,6 +2901,70 @@
       "use_idf": false,
       "svd_dim": null,
       "bleu_score": 0.0869493171223382
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        3,
+        5
+      ],
+      "min_df": 3,
+      "max_df": 0.8,
+      "preprocessing": "with_boundaries",
+      "sublinear_tf": true,
+      "norm": "l2",
+      "use_idf": false,
+      "svd_dim": null,
+      "bleu_score": 0.08685575789759784
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        3,
+        5
+      ],
+      "min_df": 3,
+      "max_df": 0.9,
+      "preprocessing": "with_boundaries",
+      "sublinear_tf": true,
+      "norm": "l2",
+      "use_idf": false,
+      "svd_dim": null,
+      "bleu_score": 0.08685575789759784
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        3,
+        5
+      ],
+      "min_df": 5,
+      "max_df": 0.7,
+      "preprocessing": "standard",
+      "sublinear_tf": false,
+      "norm": "l1",
+      "use_idf": false,
+      "svd_dim": null,
+      "bleu_score": 0.08674949015017194
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        2,
+        3
+      ],
+      "min_df": 2,
+      "max_df": 0.7,
+      "preprocessing": "standard",
+      "sublinear_tf": false,
+      "norm": "l1",
+      "use_idf": false,
+      "svd_dim": null,
+      "bleu_score": 0.08674359979023373
     },
     {
       "vectorizer_type": "tfidf",
@@ -1365,6 +2989,22 @@
         2,
         3
       ],
+      "min_df": 2,
+      "max_df": 0.8,
+      "preprocessing": "standard",
+      "sublinear_tf": false,
+      "norm": "l2",
+      "use_idf": false,
+      "svd_dim": null,
+      "bleu_score": 0.08652943071563288
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        2,
+        3
+      ],
       "min_df": 1,
       "max_df": 0.8,
       "preprocessing": "with_boundaries",
@@ -1373,6 +3013,22 @@
       "use_idf": false,
       "svd_dim": null,
       "bleu_score": 0.08652774146294238
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        2,
+        3
+      ],
+      "min_df": 1,
+      "max_df": 0.7,
+      "preprocessing": "with_boundaries",
+      "sublinear_tf": false,
+      "norm": "l2",
+      "use_idf": false,
+      "svd_dim": null,
+      "bleu_score": 0.0865187089462642
     },
     {
       "vectorizer_type": "tfidf",
@@ -1389,6 +3045,38 @@
       "use_idf": false,
       "svd_dim": null,
       "bleu_score": 0.08649376949138925
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        3,
+        5
+      ],
+      "min_df": 5,
+      "max_df": 0.7,
+      "preprocessing": "with_boundaries",
+      "sublinear_tf": false,
+      "norm": "l1",
+      "use_idf": false,
+      "svd_dim": null,
+      "bleu_score": 0.08649376949138925
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        2,
+        3
+      ],
+      "min_df": 5,
+      "max_df": 0.7,
+      "preprocessing": "with_boundaries",
+      "sublinear_tf": false,
+      "norm": "l1",
+      "use_idf": false,
+      "svd_dim": null,
+      "bleu_score": 0.08647117659993737
     },
     {
       "vectorizer_type": "count",
@@ -1429,6 +3117,22 @@
         1,
         3
       ],
+      "min_df": 1,
+      "max_df": 0.7,
+      "preprocessing": "with_boundaries",
+      "sublinear_tf": false,
+      "norm": "l1",
+      "use_idf": false,
+      "svd_dim": null,
+      "bleu_score": 0.08644418385702997
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        1,
+        3
+      ],
       "min_df": 3,
       "max_df": 0.7,
       "preprocessing": "with_boundaries",
@@ -1453,6 +3157,22 @@
       "use_idf": true,
       "svd_dim": null,
       "bleu_score": 0.08626363442944536
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        3,
+        5
+      ],
+      "min_df": 5,
+      "max_df": 0.9,
+      "preprocessing": "with_boundaries",
+      "sublinear_tf": true,
+      "norm": "l1",
+      "use_idf": false,
+      "svd_dim": null,
+      "bleu_score": 0.08623686776707115
     },
     {
       "vectorizer_type": "tfidf",
@@ -1525,6 +3245,22 @@
         2,
         3
       ],
+      "min_df": 3,
+      "max_df": 0.9,
+      "preprocessing": "standard",
+      "sublinear_tf": false,
+      "norm": "l2",
+      "use_idf": false,
+      "svd_dim": null,
+      "bleu_score": 0.08589015844246456
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        2,
+        3
+      ],
       "min_df": 5,
       "max_df": 1.0,
       "preprocessing": "standard",
@@ -1545,10 +3281,58 @@
       "max_df": 0.9,
       "preprocessing": "standard",
       "sublinear_tf": false,
+      "norm": "l1",
+      "use_idf": false,
+      "svd_dim": null,
+      "bleu_score": 0.08515613299656505
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        1,
+        3
+      ],
+      "min_df": 2,
+      "max_df": 0.9,
+      "preprocessing": "standard",
+      "sublinear_tf": false,
       "norm": "l2",
       "use_idf": false,
       "svd_dim": null,
       "bleu_score": 0.08513788288286232
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        1,
+        3
+      ],
+      "min_df": 1,
+      "max_df": 0.9,
+      "preprocessing": "standard",
+      "sublinear_tf": false,
+      "norm": "l1",
+      "use_idf": false,
+      "svd_dim": null,
+      "bleu_score": 0.08513187582209654
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        1,
+        3
+      ],
+      "min_df": 3,
+      "max_df": 0.9,
+      "preprocessing": "standard",
+      "sublinear_tf": false,
+      "norm": "l2",
+      "use_idf": false,
+      "svd_dim": null,
+      "bleu_score": 0.08509709198218027
     },
     {
       "vectorizer_type": "tfidf",
@@ -1653,6 +3437,22 @@
         1,
         3
       ],
+      "min_df": 3,
+      "max_df": 1.0,
+      "preprocessing": "with_boundaries",
+      "sublinear_tf": false,
+      "norm": "l2",
+      "use_idf": false,
+      "svd_dim": null,
+      "bleu_score": 0.08012471949066227
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        1,
+        3
+      ],
       "min_df": 2,
       "max_df": 1.0,
       "preprocessing": "standard",
@@ -1741,6 +3541,102 @@
       "use_idf": true,
       "svd_dim": null,
       "bleu_score": 0.07734514842931328
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        2,
+        4
+      ],
+      "min_df": 2,
+      "max_df": 0.8,
+      "preprocessing": "with_boundaries",
+      "sublinear_tf": true,
+      "norm": "l2",
+      "use_idf": true,
+      "svd_dim": 300,
+      "bleu_score": 0.040084288541343514
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        2,
+        4
+      ],
+      "min_df": 2,
+      "max_df": 0.8,
+      "preprocessing": "with_boundaries",
+      "sublinear_tf": true,
+      "norm": "l2",
+      "use_idf": true,
+      "svd_dim": 100,
+      "bleu_score": 0.039110953796945166
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        2,
+        4
+      ],
+      "min_df": 3,
+      "max_df": 1.0,
+      "preprocessing": "with_boundaries",
+      "sublinear_tf": true,
+      "norm": "l1",
+      "use_idf": true,
+      "svd_dim": 100,
+      "bleu_score": 0.037613573840842913
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        2,
+        4
+      ],
+      "min_df": 3,
+      "max_df": 1.0,
+      "preprocessing": "with_boundaries",
+      "sublinear_tf": true,
+      "norm": "l1",
+      "use_idf": true,
+      "svd_dim": 300,
+      "bleu_score": 0.03701520261031258
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        2,
+        4
+      ],
+      "min_df": 3,
+      "max_df": 0.7,
+      "preprocessing": "with_boundaries",
+      "sublinear_tf": true,
+      "norm": "l1",
+      "use_idf": true,
+      "svd_dim": 300,
+      "bleu_score": 0.03515110231195563
+    },
+    {
+      "vectorizer_type": "tfidf",
+      "analyzer": "char",
+      "ngram_range": [
+        2,
+        4
+      ],
+      "min_df": 3,
+      "max_df": 0.7,
+      "preprocessing": "with_boundaries",
+      "sublinear_tf": true,
+      "norm": "l1",
+      "use_idf": true,
+      "svd_dim": 100,
+      "bleu_score": 0.03480155740969702
     }
   ],
   "best_config": {

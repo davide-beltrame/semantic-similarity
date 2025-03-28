@@ -1,6 +1,1366 @@
 {
   "results": [
     {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 5,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.09042191922981972
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 5,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.0903570163563376
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 5,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.09032059260279907
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 8,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.09019442445630814
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 5,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.09013997797690594
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 3,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.09003374282548815
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 3,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.09002949829386421
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 8,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.08996599723667612
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 5,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.08988130574082821
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 5,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.08986553285558674
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 3,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.08985108868931659
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 3,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.08971514060669779
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 3,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.08969116147168543
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 8,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.0896881337778842
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 8,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.08963454332663821
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 8,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.08963358052954734
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 8,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.08942241468110954
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 3,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.08931525755397325
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 8,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.08908150615763748
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 8,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.08900376775350467
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 8,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.08894978648055632
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 5,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.08886734602060813
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 3,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.08860684882560613
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 5,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.08834358508799764
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 5,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.08824681549060016
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 8,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.08750196502837193
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 8,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.08746915781251019
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 8,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.08745232065830903
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 8,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.08740909382335667
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 8,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.08716916544480244
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 3,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.08716133800667937
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 3,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.08714039556835641
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 5,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.08711715234391784
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 5,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.08710519085847689
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 8,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.0869686411417354
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 5,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.0868688548397514
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 5,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.08686764115075918
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 3,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.08680900315365471
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 5,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.0867866071047294
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 5,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.0867193066801196
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 8,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.08671304628193854
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 3,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.08667562602753348
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 3,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.08665700011806712
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 3,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.08663356114992321
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 8,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.08644956831886823
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 8,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.08623840784072366
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 5,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.08621960468687251
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 3,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.0862188374874829
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 3,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.08619413078920349
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 5,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.08607864409919841
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 3,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.08593695166061271
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 3,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.08561491040846403
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 5,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.08551466714918511
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 3,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.08522541659742743
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 8,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.08444544658117475
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 8,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.08444247479573405
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 8,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.0844406296980392
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 5,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.08436248547731418
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 5,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.08434537730884153
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 8,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.0842589920215956
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 8,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.08423912297647047
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 3,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.08421615669024109
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 8,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.08419633838435471
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 8,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.08417540568022162
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 8,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.08417333971882966
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 8,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.08410972046724685
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 5,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.08406287994631917
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 3,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.08403606838981278
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 8,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.08401216377380752
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 3,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.08398377179918659
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 8,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.08397605297834061
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 8,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.08396396693633391
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 5,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.08396011218665345
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 8,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.08394192226206308
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 8,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.0839390882374007
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 8,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.08392742724376984
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 8,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.08392079626264991
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 3,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.08391876948999652
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 5,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.08390381155998966
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 8,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.08389080991652133
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 8,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.08388239481752899
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 8,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.08387830748506866
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 5,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.08384246742687369
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 3,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.08382396452235968
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 5,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.08381973672340463
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 3,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.08381850410099582
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 3,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.08381527031831199
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 3,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.08378885884952184
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 8,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.08378762357000928
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 5,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.08378145767636336
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 3,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.08377876069443942
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 5,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.08374947496716317
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 5,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.08374642734194268
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 5,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.08371263299245556
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 8,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.08370885057479259
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 5,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.08370433899401249
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 3,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.08362115613759424
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 5,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.08360624607277391
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 5,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.08358642924124017
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 8,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.08357402790253829
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 5,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.08355681989128119
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 5,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.08354796880590921
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 5,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.0835469738170457
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 5,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.08354234177314412
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 5,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.08352891006849225
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 5,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.08347210236095316
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 5,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.08346955051917405
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 3,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.08345057564286511
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 8,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.08342110209379902
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 8,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.08341886470243184
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 8,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.08339021067383348
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 8,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.08338660099165529
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 5,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.08336055315742923
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 3,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.08334134139825232
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 8,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.08333222474539898
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 3,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.08331964031089205
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 3,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.08329188626523654
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 5,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.0832828902003536
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 3,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.08325161536254327
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 3,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.0832296707318525
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 3,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.08322524767823407
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 3,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.08321688193948866
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 8,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.08319477901333386
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 8,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.0831561425471469
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 5,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.08315350771491346
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 5,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.08312930375178727
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 5,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.08310014457206528
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 3,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.08304983178281496
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 5,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.08304391598750448
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 8,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.08304358594083133
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 5,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.08302234417235105
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 3,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.08298465535836072
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 3,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.08297691218532376
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 5,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.08292567407306747
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 3,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.08290289877527414
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 5,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.08288639544635609
+    },
+    {
       "model_type": "fasttext",
       "vector_size": 100,
       "window": 8,
@@ -19,6 +1379,16 @@
       "embedding_method": "weighted",
       "remove_punct": true,
       "bleu_score": 0.08281566594365736
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 8,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.08280395047422476
     },
     {
       "model_type": "fasttext",
@@ -62,6 +1432,26 @@
     },
     {
       "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 3,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.08261144144652956
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 8,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.08257083539092887
+    },
+    {
+      "model_type": "fasttext",
       "vector_size": 100,
       "window": 3,
       "min_count": 3,
@@ -69,6 +1459,56 @@
       "embedding_method": "weighted",
       "remove_punct": true,
       "bleu_score": 0.08256525194616351
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 8,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.08255980975472227
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 8,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.08255500528678508
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 3,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.08251529860209814
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 8,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.0824549446707602
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 3,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.08245015602636939
     },
     {
       "model_type": "fasttext",
@@ -92,6 +1532,16 @@
     },
     {
       "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 5,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.08238265105763666
+    },
+    {
+      "model_type": "fasttext",
       "vector_size": 100,
       "window": 3,
       "min_count": 2,
@@ -112,6 +1562,76 @@
     },
     {
       "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 8,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.08225085128899805
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 3,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.08220637115615356
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 5,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.08218666457444887
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 3,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.0821211555664294
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 3,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.08201921936791737
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 5,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.0820170369677757
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 5,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.08199569843436927
+    },
+    {
+      "model_type": "fasttext",
       "vector_size": 100,
       "window": 5,
       "min_count": 2,
@@ -119,6 +1639,16 @@
       "embedding_method": "weighted",
       "remove_punct": false,
       "bleu_score": 0.08195576453857147
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 3,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.08193721720757945
     },
     {
       "model_type": "fasttext",
@@ -152,6 +1682,36 @@
     },
     {
       "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 3,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.08186438797937001
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 5,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.08184335648616632
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 5,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.08177129012653868
+    },
+    {
+      "model_type": "fasttext",
       "vector_size": 100,
       "window": 8,
       "min_count": 5,
@@ -162,6 +1722,76 @@
     },
     {
       "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 5,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.08173781382844056
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 3,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.08173687888739148
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 8,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.08167492207742438
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 8,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.08164898168856793
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 8,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.08161125581104281
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 3,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.08159653779881862
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 3,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.08156468877822927
+    },
+    {
+      "model_type": "fasttext",
       "vector_size": 100,
       "window": 8,
       "min_count": 3,
@@ -169,6 +1799,16 @@
       "embedding_method": "weighted",
       "remove_punct": false,
       "bleu_score": 0.08154314144988364
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 3,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.08149883205852863
     },
     {
       "model_type": "fasttext",
@@ -202,6 +1842,16 @@
     },
     {
       "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 5,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.08135470140373188
+    },
+    {
+      "model_type": "fasttext",
       "vector_size": 100,
       "window": 8,
       "min_count": 5,
@@ -209,6 +1859,66 @@
       "embedding_method": "weighted",
       "remove_punct": false,
       "bleu_score": 0.08133885649125261
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 8,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.08133341811909267
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 5,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.0813321572611273
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 5,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.08133200996970635
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 5,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.0813034924202103
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 8,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.08128503426634413
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 3,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.08126069699434446
     },
     {
       "model_type": "fasttext",
@@ -229,6 +1939,16 @@
       "embedding_method": "weighted",
       "remove_punct": false,
       "bleu_score": 0.08121701076819454
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 8,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.08121679789136882
     },
     {
       "model_type": "fasttext",
@@ -262,6 +1982,16 @@
     },
     {
       "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 3,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": true,
+      "bleu_score": 0.08101631576950567
+    },
+    {
+      "model_type": "fasttext",
       "vector_size": 100,
       "window": 3,
       "min_count": 5,
@@ -269,6 +1999,26 @@
       "embedding_method": "weighted",
       "remove_punct": false,
       "bleu_score": 0.08097688972374212
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 3,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.08096327403321883
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 5,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.08087877173009035
     },
     {
       "model_type": "fasttext",
@@ -282,6 +2032,16 @@
     },
     {
       "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 3,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.08079840422354194
+    },
+    {
+      "model_type": "fasttext",
       "vector_size": 100,
       "window": 8,
       "min_count": 2,
@@ -289,6 +2049,76 @@
       "embedding_method": "weighted",
       "remove_punct": false,
       "bleu_score": 0.08079255105700273
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 5,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.08078843883740817
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 8,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.08076579737430317
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 8,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.08074774842320895
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 5,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.08072251050516134
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 5,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.08071928881467814
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 5,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.08064785618785907
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 3,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.08064316908313901
     },
     {
       "model_type": "fasttext",
@@ -301,6 +2131,26 @@
       "bleu_score": 0.08059609260659877
     },
     {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 8,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.08058068293303337
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 5,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.08057164876288028
+    },
+    {
       "model_type": "fasttext",
       "vector_size": 100,
       "window": 5,
@@ -309,6 +2159,56 @@
       "embedding_method": "weighted",
       "remove_punct": false,
       "bleu_score": 0.08056790967344649
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 3,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.08050998473148013
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 5,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.08049964570181156
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 8,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.08047276710701626
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 3,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.08047031442887383
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 8,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.0804655027025321
     },
     {
       "model_type": "fasttext",
@@ -321,6 +2221,26 @@
       "bleu_score": 0.0804447101142232
     },
     {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 3,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.08041559206057478
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 3,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.08038582416293669
+    },
+    {
       "model_type": "fasttext",
       "vector_size": 100,
       "window": 5,
@@ -329,6 +2249,36 @@
       "embedding_method": "weighted",
       "remove_punct": false,
       "bleu_score": 0.08034806747637256
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 8,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.08026512098131233
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 5,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.08025979861310459
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 8,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.0802561752398072
     },
     {
       "model_type": "fasttext",
@@ -341,6 +2291,136 @@
       "bleu_score": 0.08025521047087326
     },
     {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 8,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.08023134566101858
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 8,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.08022788049868566
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 3,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.08021369601603094
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 5,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.08021265989349352
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 3,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.08017828610157275
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 8,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.0801738283094555
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 3,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.08012691750492223
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 3,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.08005402060340382
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 5,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.08004489392105081
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 8,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.08001050344158088
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 8,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.08000024084124974
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 3,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.07997352570320991
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 5,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.0799136891689242
+    },
+    {
       "model_type": "fasttext",
       "vector_size": 100,
       "window": 3,
@@ -349,6 +2429,66 @@
       "embedding_method": "weighted",
       "remove_punct": false,
       "bleu_score": 0.07989568204992617
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 8,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.07988393424877817
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 5,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.07984618884600839
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 5,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.07981024548483501
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 5,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.07976730962696513
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 8,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.07968466189834013
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 8,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.07968392819836269
     },
     {
       "model_type": "fasttext",
@@ -361,6 +2501,26 @@
       "bleu_score": 0.07965174598063667
     },
     {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 3,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "weighted",
+      "remove_punct": false,
+      "bleu_score": 0.07963835018382429
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 8,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.07959105972641879
+    },
+    {
       "model_type": "fasttext",
       "vector_size": 100,
       "window": 5,
@@ -371,6 +2531,46 @@
       "bleu_score": 0.07957569612424961
     },
     {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 5,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.07957127035849723
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 8,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.07947271044948762
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 5,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.0793785124470601
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 3,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.07931279967404953
+    },
+    {
       "model_type": "fasttext",
       "vector_size": 100,
       "window": 3,
@@ -379,6 +2579,726 @@
       "embedding_method": "weighted",
       "remove_punct": false,
       "bleu_score": 0.07929919548257919
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 5,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.07908376507012367
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 3,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.07907797170192753
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 5,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.07903699200443307
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 8,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.07902039749646236
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 5,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.07896377411804563
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 3,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.07883427728365096
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 3,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.07874864977966034
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 3,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.0787107398997266
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 3,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.07865408581805322
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 3,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.07851185571424531
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 3,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.07835829179763709
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 3,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.07813966390217657
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 8,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.0770780320508636
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 8,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.07682424583115385
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 5,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.0767821837854183
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 8,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.07677004296261453
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 8,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.07674052192206464
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 8,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.07673178024754339
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 3,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.07659575965015748
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 8,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.07658613979064703
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 5,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.07652992629408555
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 5,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.07642977261983436
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 8,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.07626986069325686
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 8,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.0761780778398789
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 3,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.07616250948516337
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 8,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.07598823064549438
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 5,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.07595261169878074
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 3,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.07587247196066961
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 3,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.07584367899268113
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 5,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.0758351853922656
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 5,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.07581462345038247
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 5,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.07571896630703338
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 5,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.0755408175219043
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 3,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.07552960062404068
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 3,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.07545961344054306
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 3,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.07539127815761644
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 5,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.0753248801408808
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 3,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.07530681139019874
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 3,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.0750679682868077
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 5,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.07372231755121236
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 8,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.07370614898023023
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 3,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.07367365172825643
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 5,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.07367161121375639
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 3,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.07352113748101262
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 8,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.07332706088653776
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 3,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.07328869784993422
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 3,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.07328445508323835
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 8,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.07324698785117387
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 5,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.073245438440825
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 8,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.07321918399523322
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 3,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.07320989609341383
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 5,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.07320578965921755
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 3,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.07316694060711813
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 8,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.07313476070830852
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 8,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.07311906921378586
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 5,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.07311151113956736
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 5,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.07300897958312522
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 3,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.07300115811954559
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 3,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.07297117276959786
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 5,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.07295794384314988
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 8,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.0728692574005656
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 5,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.07283395870060841
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 3,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.0727855832644452
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 5,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.072751336858722
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 8,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.0727434686811358
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 8,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.07263678637236795
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 5,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.072281580979821
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 3,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.0721615834797653
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 8,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.0720818547802348
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 8,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.07178291060583276
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 3,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.0717801621347635
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 5,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.07157759866630593
     },
     {
       "model_type": "fasttext",
@@ -401,6 +3321,136 @@
       "bleu_score": 0.07150600263540867
     },
     {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 5,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.0714846032856077
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 8,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.07148253794447663
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 5,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.07139673745058517
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 8,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.0713800551029289
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 3,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.07137275320114607
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 3,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.07136133967252574
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 5,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.07129965566919863
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 8,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.07129043196884711
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 8,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.07127937551420328
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 5,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.07126780576452972
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 5,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.07122786254312709
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 5,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.07114242787620689
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 5,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.07113960576424315
+    },
+    {
       "model_type": "fasttext",
       "vector_size": 100,
       "window": 8,
@@ -409,6 +3459,186 @@
       "embedding_method": "mean",
       "remove_punct": true,
       "bleu_score": 0.07113196122317972
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 5,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.07106748243487733
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 5,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.07097946517642272
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 5,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.0709228486384535
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 3,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.07089178865617027
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 8,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.07087021473171995
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 8,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.07086128798163424
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 5,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.07085971337915184
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 3,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.07085811953578745
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 5,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.07080067050931407
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 8,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.07078636131923415
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 8,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.07076766626748288
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 5,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.07074564810958643
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 3,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.0707403695469896
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 8,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.0707168939386114
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 8,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.07068908473620647
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 8,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.0706842314804248
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 3,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.0706778793525517
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 8,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.07067433370520304
     },
     {
       "model_type": "fasttext",
@@ -452,6 +3682,76 @@
     },
     {
       "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 8,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.07045493872828167
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 8,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.07043780777862714
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 8,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.07040892763064405
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 5,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.0704059665546557
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 5,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.07039086010307513
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 8,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.07034878030955549
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 8,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.0703417776571925
+    },
+    {
+      "model_type": "fasttext",
       "vector_size": 100,
       "window": 5,
       "min_count": 2,
@@ -459,6 +3759,16 @@
       "embedding_method": "mean",
       "remove_punct": true,
       "bleu_score": 0.07032860332635646
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 8,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.07029908862186884
     },
     {
       "model_type": "fasttext",
@@ -472,6 +3782,16 @@
     },
     {
       "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 5,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.07029591253885192
+    },
+    {
+      "model_type": "fasttext",
       "vector_size": 100,
       "window": 5,
       "min_count": 5,
@@ -479,6 +3799,96 @@
       "embedding_method": "mean",
       "remove_punct": true,
       "bleu_score": 0.07028204575596844
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 8,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.07027475958817761
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 8,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.0702615579548973
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 3,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.07023961586600853
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 3,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.07017940930390125
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 8,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.07017463444950604
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 3,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.07016335766347358
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 3,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.07016145991318001
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 3,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.0701398287657454
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 5,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.07013458801215393
     },
     {
       "model_type": "fasttext",
@@ -499,6 +3909,56 @@
       "embedding_method": "mean",
       "remove_punct": true,
       "bleu_score": 0.07012076845681099
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 5,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.07011292178971527
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 3,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.07008462454951188
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 8,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.0700844958827226
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 3,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.07004424087495031
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 8,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.07000380065545252
     },
     {
       "model_type": "fasttext",
@@ -532,6 +3992,66 @@
     },
     {
       "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 5,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.06988725828138652
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 8,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.06988248176365291
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 3,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.06987225390800704
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 8,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.06986133426397376
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 8,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.06979757160732905
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 3,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.06975325330327575
+    },
+    {
+      "model_type": "fasttext",
       "vector_size": 100,
       "window": 5,
       "min_count": 5,
@@ -552,6 +4072,46 @@
     },
     {
       "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 3,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.06971745663564777
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 3,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.06967815854470374
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 5,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.06964080041333764
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 5,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.06963857282392796
+    },
+    {
+      "model_type": "fasttext",
       "vector_size": 100,
       "window": 3,
       "min_count": 2,
@@ -569,6 +4129,36 @@
       "embedding_method": "mean",
       "remove_punct": true,
       "bleu_score": 0.06961859487285692
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 3,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.06955390093770364
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 3,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.069522520588454
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 5,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.06952062151369162
     },
     {
       "model_type": "fasttext",
@@ -594,11 +4184,131 @@
       "model_type": "fasttext",
       "vector_size": 200,
       "window": 3,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.06936863820657087
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 5,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.06935524407189206
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 3,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.0693469105507688
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 3,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.06932989103033374
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 8,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.06932857405067919
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 8,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.06929252660301631
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 5,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.0692295949383831
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 5,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.06917770771718042
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 3,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.06916101702007511
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 8,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.06915699327075712
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 3,
       "min_count": 2,
       "epochs": 10,
       "embedding_method": "mean",
       "remove_punct": true,
       "bleu_score": 0.0691541798406327
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 5,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.06915394270692297
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 8,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.06912993430431227
     },
     {
       "model_type": "fasttext",
@@ -609,6 +4319,16 @@
       "embedding_method": "mean",
       "remove_punct": true,
       "bleu_score": 0.06912806209418798
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 5,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.0690759267955327
     },
     {
       "model_type": "fasttext",
@@ -632,6 +4352,86 @@
     },
     {
       "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 5,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.06903615253327154
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 5,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.06901630533497313
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 8,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.0689832103773581
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 3,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.06895697185121409
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 8,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.0689510159839025
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 5,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.06895018366412202
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 5,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.06891972255956695
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 5,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.068856353728268
+    },
+    {
+      "model_type": "fasttext",
       "vector_size": 100,
       "window": 3,
       "min_count": 3,
@@ -642,6 +4442,66 @@
     },
     {
       "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 3,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.06883221920819009
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 8,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.06882421539264612
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 3,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.06880476352060219
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 3,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.06875208698271162
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 3,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": true,
+      "bleu_score": 0.06874040083499484
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 3,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.06873735650587544
+    },
+    {
+      "model_type": "fasttext",
       "vector_size": 100,
       "window": 3,
       "min_count": 3,
@@ -649,6 +4509,16 @@
       "embedding_method": "mean",
       "remove_punct": true,
       "bleu_score": 0.06873404146712724
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 5,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.06871263009680943
     },
     {
       "model_type": "fasttext",
@@ -671,6 +4541,16 @@
       "bleu_score": 0.06868875825370621
     },
     {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 5,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.06868479461698594
+    },
+    {
       "model_type": "fasttext",
       "vector_size": 100,
       "window": 5,
@@ -679,6 +4559,86 @@
       "embedding_method": "mean",
       "remove_punct": false,
       "bleu_score": 0.06866884224188446
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 3,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.06863699293756056
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 8,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.0686301787514124
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 5,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.06861329004359225
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 8,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.06859339163846263
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 5,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.06857588819440279
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 5,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.06856935377929023
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 3,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.06852631546467573
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 8,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.06852416431359425
     },
     {
       "model_type": "fasttext",
@@ -711,6 +4671,66 @@
       "bleu_score": 0.06843877945096674
     },
     {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 5,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.06835286827301643
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 3,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.06823356604988098
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 8,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.06823280772851527
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 3,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.06822280667741686
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 8,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.06820802845099158
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 5,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.06817751563521285
+    },
+    {
       "model_type": "fasttext",
       "vector_size": 200,
       "window": 3,
@@ -722,6 +4742,26 @@
     },
     {
       "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 3,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.06816207264764608
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 3,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "mean",
+      "remove_punct": false,
+      "bleu_score": 0.06814566367051507
+    },
+    {
+      "model_type": "fasttext",
       "vector_size": 100,
       "window": 3,
       "min_count": 2,
@@ -729,6 +4769,26 @@
       "embedding_method": "mean",
       "remove_punct": true,
       "bleu_score": 0.06814114667124636
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 3,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.06812490458677907
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 3,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.0680455755234115
     },
     {
       "model_type": "fasttext",
@@ -751,6 +4811,16 @@
       "bleu_score": 0.06800714666895559
     },
     {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 8,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.06798084479603231
+    },
+    {
       "model_type": "fasttext",
       "vector_size": 100,
       "window": 3,
@@ -759,6 +4829,776 @@
       "embedding_method": "mean",
       "remove_punct": false,
       "bleu_score": 0.06797890536649638
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 8,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.0679551705284584
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 3,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.06792075231369218
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 5,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.0677348521667401
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 8,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.06771946639353618
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 5,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.0676206585985122
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 5,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.06757216924770226
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 8,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.06753657820588779
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 8,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.06747123709625207
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 5,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.06741654242659308
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 3,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.06740462400417747
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 8,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.06739312422026805
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 3,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.06737427373616124
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 3,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.06736032945269511
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 3,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.06724738288792831
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 8,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.06721825881138607
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 8,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.06721284277392185
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 5,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.06716734857405167
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 5,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.06706902649420142
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 5,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.06703542535101173
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 5,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.06696984859858182
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 3,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.06692021422746378
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 3,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.06686620101649317
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 8,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.06681540467823509
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 5,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.06678976884143757
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 3,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.06673630710999477
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 5,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.0664833970692518
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 8,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.06645034026331655
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 3,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.06644384809791
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 3,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.06596317047856798
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 5,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.06573009670678615
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 3,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.06563852644884503
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 3,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.06561592485334326
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 8,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.06550151511566571
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 8,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.06535767290087867
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 3,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.06532555588789102
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 8,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.06527300912321642
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 5,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.06526869991428476
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 8,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.06523504010055718
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 5,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.06510694953299864
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 3,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.06497868410044665
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 5,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.06492542285465332
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 5,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.06485357361279769
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 3,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.06482280030034418
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 5,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.06478439712342911
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 3,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.06477033942268595
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 5,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.06475389262670296
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 8,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.0647445938326112
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 8,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.06467634023931207
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 8,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.06447807343559196
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 8,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.06446899887645807
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 5,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.06441882094333024
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 8,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.06438466788722279
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 3,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.06436844157335563
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 300,
+      "window": 3,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.06435289676624205
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 200,
+      "window": 5,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.06413537360313226
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 8,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.06406366717463355
+    },
+    {
+      "model_type": "word2vec",
+      "vector_size": 100,
+      "window": 3,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.0635838962632891
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 5,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.06165215333556711
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 3,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.06155958679972251
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 3,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.06149311276256158
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 3,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.06145756725485629
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 8,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.061454014406147145
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 8,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.06140593367655472
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 8,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.06139954852872946
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 5,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.061398361255726466
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 8,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.06129026343256953
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 8,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.061252023765657554
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 8,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.06121729602786361
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 5,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.06118390392042122
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 5,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.0611776038571283
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 3,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.06116063207224263
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 8,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.061122171679823555
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 3,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.061114246164412044
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 3,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.061090211813530505
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 8,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.06100040082027538
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 8,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.06096871317985165
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 5,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.060950306853909966
     },
     {
       "model_type": "fasttext",
@@ -772,6 +5612,46 @@
     },
     {
       "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 8,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.0609064378585972
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 3,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.06087786010458897
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 3,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.06086783698589536
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 8,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.06086671431460188
+    },
+    {
+      "model_type": "fasttext",
       "vector_size": 100,
       "window": 8,
       "min_count": 2,
@@ -779,6 +5659,36 @@
       "embedding_method": "max_pooling",
       "remove_punct": false,
       "bleu_score": 0.06086324731728275
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 8,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.060853744987133834
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 8,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.06084430127895909
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 3,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.06084231670995369
     },
     {
       "model_type": "fasttext",
@@ -792,6 +5702,106 @@
     },
     {
       "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 5,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.060824354783038756
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 5,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.06080263671034381
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 5,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.06078161539155742
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 8,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.060751791020472845
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 3,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.06074409923700728
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 5,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.06073323552036545
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 8,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.06071555181640574
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 5,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.06069902944037349
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 5,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.06068525892007294
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 8,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.060678505333120435
+    },
+    {
+      "model_type": "fasttext",
       "vector_size": 100,
       "window": 3,
       "min_count": 5,
@@ -799,6 +5809,76 @@
       "embedding_method": "max_pooling",
       "remove_punct": true,
       "bleu_score": 0.060652096728274624
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 5,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.06064163700738352
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 8,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.06060928506658481
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 5,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.06058492841928141
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 5,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.060507347434498704
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 8,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.06049148754261976
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 3,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.06048006803721898
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 3,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.0604636481239638
     },
     {
       "model_type": "fasttext",
@@ -813,12 +5893,42 @@
     {
       "model_type": "fasttext",
       "vector_size": 200,
+      "window": 8,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.06045303084421055
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
       "window": 3,
       "min_count": 2,
       "epochs": 10,
       "embedding_method": "max_pooling",
       "remove_punct": true,
       "bleu_score": 0.060446922044258555
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 8,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.06043201683171358
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 5,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.060427770733117586
     },
     {
       "model_type": "fasttext",
@@ -829,6 +5939,16 @@
       "embedding_method": "max_pooling",
       "remove_punct": false,
       "bleu_score": 0.06041252373779525
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 5,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.06038748402954542
     },
     {
       "model_type": "fasttext",
@@ -852,6 +5972,16 @@
     },
     {
       "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 8,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.060319402075713756
+    },
+    {
+      "model_type": "fasttext",
       "vector_size": 100,
       "window": 8,
       "min_count": 3,
@@ -862,6 +5992,16 @@
     },
     {
       "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 3,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.060294767514234106
+    },
+    {
+      "model_type": "fasttext",
       "vector_size": 100,
       "window": 8,
       "min_count": 5,
@@ -869,6 +6009,46 @@
       "embedding_method": "max_pooling",
       "remove_punct": true,
       "bleu_score": 0.06027689358191276
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 3,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.060271051592950764
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 3,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.0602358869799697
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 3,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.06022531532078387
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 5,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.06020300250744158
     },
     {
       "model_type": "fasttext",
@@ -892,6 +6072,36 @@
     },
     {
       "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 3,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.06013447831187733
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 5,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.0601122268020832
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 5,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.06009393112762068
+    },
+    {
+      "model_type": "fasttext",
       "vector_size": 100,
       "window": 5,
       "min_count": 5,
@@ -899,6 +6109,26 @@
       "embedding_method": "max_pooling",
       "remove_punct": true,
       "bleu_score": 0.06009306610461914
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 8,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.0600890080180224
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 3,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.060084569340309396
     },
     {
       "model_type": "fasttext",
@@ -912,6 +6142,46 @@
     },
     {
       "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 3,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.06002392191114051
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 8,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.05997412589739747
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 3,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.0599446368914089
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 5,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.05994443722860774
+    },
+    {
+      "model_type": "fasttext",
       "vector_size": 100,
       "window": 3,
       "min_count": 3,
@@ -919,6 +6189,66 @@
       "embedding_method": "max_pooling",
       "remove_punct": false,
       "bleu_score": 0.059915937176516845
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 5,
+      "min_count": 2,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.05991501161924024
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 5,
+      "min_count": 2,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.05989419542132805
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 3,
+      "min_count": 3,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.05986532291953422
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 3,
+      "min_count": 5,
+      "epochs": 20,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.05983974505181022
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 8,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.05983357541538523
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 200,
+      "window": 5,
+      "min_count": 5,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": true,
+      "bleu_score": 0.059804866998208084
     },
     {
       "model_type": "fasttext",
@@ -999,6 +6329,16 @@
       "embedding_method": "max_pooling",
       "remove_punct": true,
       "bleu_score": 0.059610696749447765
+    },
+    {
+      "model_type": "fasttext",
+      "vector_size": 300,
+      "window": 5,
+      "min_count": 3,
+      "epochs": 10,
+      "embedding_method": "max_pooling",
+      "remove_punct": false,
+      "bleu_score": 0.059541507608923336
     },
     {
       "model_type": "fasttext",
@@ -1142,13 +6482,13 @@
     }
   ],
   "best_config": {
-    "model_type": "fasttext",
-    "vector_size": 100,
-    "window": 8,
-    "min_count": 5,
+    "model_type": "word2vec",
+    "vector_size": 300,
+    "window": 5,
+    "min_count": 2,
     "epochs": 20,
     "embedding_method": "weighted",
     "remove_punct": true
   },
-  "best_bleu": 0.08282769570128182
+  "best_bleu": 0.09042191922981972
 }

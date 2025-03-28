@@ -1,0 +1,12 @@
+{
+  "best_config": {
+    "model_type": "word2vec",
+    "vector_size": 300,
+    "window": 5,
+    "min_count": 2,
+    "epochs": 20,
+    "embedding_method": "weighted",
+    "remove_punct": true
+  },
+  "description": "This configuration was found by grid search to have the highest BLEU score on the dev set."
+}
